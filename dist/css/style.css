@@ -604,4 +604,29 @@ h1 {
     color: #f9f9f9;
     font-size: .67em; }
 
+.details {
+  margin: 90px auto 0;
+  text-align: center;
+  width: 49%; }
+  .details h1 {
+    letter-spacing: .01em;
+    margin-bottom: 80px;
+    word-spacing: .02em;
+    font-weight: 700;
+    font-size: 3em; }
+  .details p {
+    margin-bottom: 20px;
+    font-size: 1.2em; }
+  .details input {
+    border: 3px solid #F2994A;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    border-radius: 2em;
+    text-align: center;
+    padding: 15px 20px;
+    color: #C3C0C0;
+    width: 70%; }
+
 /*# sourceMappingURL=style.css.map */

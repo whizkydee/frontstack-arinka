@@ -107,3 +107,20 @@
   }
 }
 
+@mixin overviewgradient() {
+  background: #EC5857;
+  background: -webkit-linear-gradient($expr);
+  background: -o-linear-gradient($expr);
+  background: -ms-linear-gradient($expr);
+  background: -moz-linear-gradient($expr);
+  background: linear-gradient($expr2);
+}
+
+@mixin footergradient() {
+  background: #E36F55;
+  background: -webkit-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
+  background: -o-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
+  background: -ms-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
+  background: -moz-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
+  background: linear-gradient(to bottom, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);  
+}

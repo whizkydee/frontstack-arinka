@@ -80,3 +80,38 @@ h1 {
   }
 }
 
+.navigation {
+  @include transform(translate(-50%));
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  margin-top: 4px;
+  left: 50%;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    a {
+      letter-spacing: .02em;
+      font-weight: 600;
+      font-size: .67em;
+      padding: 0 15px;
+    }
+  }
+}
+
+.misc {
+  float: right;
+  a {
+    @include border-radius(10em);
+    background-color: #ED8079;
+    letter-spacing: .05em;
+    padding: 10px 30px;
+    font-weight: 500;
+    color: $off_white;
+    font-size: .67em;
+  }
+}
+

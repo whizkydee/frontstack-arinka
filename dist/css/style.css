@@ -523,5 +523,48 @@ a {
   src: url("../../fonts/Catamaran-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 700; }
+.arinka {
+  position: relative; }
+
+h1 {
+  line-height: 1.1; }
+
+.product-overview {
+  background: #EC5857;
+  background: -webkit-linear-gradient(top, #eb5757 0%, #d78e52 95%, #d69152 100%);
+  background: -o-linear-gradient(top, #eb5757 0%, #d78e52 95%, #d69152 100%);
+  background: -ms-linear-gradient(top, #eb5757 0%, #d78e52 95%, #d69152 100%);
+  background: -moz-linear-gradient(top, #eb5757 0%, #d78e52 95%, #d69152 100%);
+  background: linear-gradient(to bottom, #eb5757 0%, #d78e52 95%, #d69152 100%);
+  position: relative;
+  height: 440px;
+  width: 100%; }
+  .product-overview *:not(input) {
+    color: #fff; }
+
+.app-header {
+  text-transform: uppercase;
+  padding: 30px 40px;
+  position: relative; }
+  .app-header .logo {
+    float: left;
+    margin: 0; }
+    .app-header .logo h5 {
+      position: relative;
+      margin: 0 35px 0; }
+      .app-header .logo h5:before {
+        content: url("../../images/plane.png");
+        -webkit-transform: scale(0.18);
+        -moz-transform: scale(0.18);
+        -ms-transform: scale(0.18);
+        -o-transform: scale(0.18);
+        transform: scale(0.18);
+        position: absolute;
+        bottom: 24px;
+        height: 16px;
+        width: 16px;
+        left: -50px; }
+      .app-header .logo h5 a {
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

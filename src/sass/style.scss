@@ -34,3 +34,49 @@
   font-style: normal;
   font-weight: 700;
 }
+
+
+.arinka {
+  position: relative;
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+.product-overview {
+  @include overviewgradient;
+  position: relative;
+  height: 440px;
+  width: $full;
+  *:not(input) {
+    color: $white;
+  }
+}
+
+.app-header {
+  text-transform: uppercase;
+  padding: 30px 40px;
+  position: relative;
+  .logo {
+    float: left;
+    margin: 0;
+    h5 {
+      position: relative;
+      margin: 0 35px 0;
+      &:before {
+        content: url('../../images/plane.png');
+        @include transform( scale(.18) );
+        position: absolute;
+        bottom: 24px;
+        height: 16px;
+        width: 16px;
+        left: -50px;
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+

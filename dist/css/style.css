@@ -629,4 +629,17 @@ h1 {
     color: #C3C0C0;
     width: 70%; }
 
+.about {
+  padding: 150px 200px 40px;
+  text-align: center; }
+  .about h4 {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    word-spacing: .03em;
+    color: #C3C0C0; }
+  .about p {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #202020; }
+
 /*# sourceMappingURL=style.css.map */

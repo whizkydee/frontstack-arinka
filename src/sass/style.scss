@@ -259,3 +259,20 @@ h1 {
   }
 }
 
+footer {
+  background-color: $white;
+  padding: 30px 50px 50px;
+  position: relative;
+  display: block;
+  * {
+    font-weight: 500;
+    display: block;
+    color: #A9A9A9;
+  }
+  a {
+    float: left;
+  }
+  span {
+    float: right;
+  }
+}

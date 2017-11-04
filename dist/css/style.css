@@ -739,4 +739,18 @@ h1 {
     z-index: -2;
     width: 60%; }
 
+footer {
+  background-color: #fff;
+  padding: 30px 50px 50px;
+  position: relative;
+  display: block; }
+  footer * {
+    font-weight: 500;
+    display: block;
+    color: #A9A9A9; }
+  footer a {
+    float: left; }
+  footer span {
+    float: right; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+{
+  "name": "frontstack-arinka",
+  "version": "1.0.0",
+  "description": "Some app",
+  "main": "src/script.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whizkydee/frontstack-arinka.git"
+  },
+  "keywords": [
+    "responsive design",
+    "frontstack",
+    "responsive",
+    "arinka"
+  ],
+  "author": "Olaolu Olawuyi",
+  "bugs": {
+    "url": "https://github.com/whizkydee/frontstack-arinka/issues"
+  },
+  "homepage": "https://whizkydee.github.io/frontstack-arinka"
+}

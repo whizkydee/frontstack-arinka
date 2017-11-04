@@ -704,4 +704,39 @@ h1 {
       background: #E7816B;
       color: #fff; }
 
+.blog {
+  display: inline-block;
+  position: relative;
+  height: 440px;
+  width: 100%; }
+  .blog > * {
+    display: inline-block;
+    position: relative; }
+  .blog .content {
+    background: #F2994A;
+    background: #E36F55;
+    background: -webkit-linear-gradient(top, #eb927f 0%, #d78f52 100%);
+    background: -o-linear-gradient(top, #eb927f 0%, #d78f52 100%);
+    background: -ms-linear-gradient(top, #eb927f 0%, #d78f52 100%);
+    background: -moz-linear-gradient(top, #eb927f 0%, #d78f52 100%);
+    background: linear-gradient(to bottom, #eb927f 0%, #d78f52 100%);
+    padding: 100px;
+    height: 100%;
+    float: left;
+    width: 40%; }
+    .blog .content h4 {
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      color: #FEBE61; }
+    .blog .content h1 {
+      font-weight: 500;
+      font-size: 3em;
+      color: #fff; }
+  .blog .mosque {
+    background: #000 url("https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_809,h_440,c_thumb/v1509799747/mosques_eef3bz.jpg") no-repeat;
+    float: right;
+    height: 100%;
+    z-index: -2;
+    width: 60%; }
+
 /*# sourceMappingURL=style.css.map */

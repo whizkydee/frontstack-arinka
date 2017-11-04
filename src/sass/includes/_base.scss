@@ -1,0 +1,37 @@
+* {
+  font-family: $basefont;
+  @include box-sizing;
+  outline: 0;
+  &:before,
+  &:after {
+    @include box-sizing;
+  }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: $full;
+  -ms-text-size-adjust: $full;
+  font-size: 18px;
+  height: $full;
+  width: $full;
+  clear: both;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $basefont;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0em;
+  width: $full;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include browserSelection($basecolor, $off_white);

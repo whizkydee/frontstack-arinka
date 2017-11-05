@@ -589,10 +589,15 @@ a {
   .navigation li {
     display: inline-block; }
     .navigation li a {
+      -webkit-border-radius: 1em;
+      -moz-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -o-border-radius: 1em;
+      border-radius: 1em;
       letter-spacing: .02em;
+      padding: 0px 15px;
       font-weight: 600;
-      font-size: .67em;
-      padding: 0 15px; }
+      font-size: .67em; }
 
 .misc {
   float: right; }

@@ -67,10 +67,14 @@
   li {
     display: inline-block;
     a {
+      @include border-radius(1em);
       letter-spacing: .02em;
+      padding: 0px 15px;
       font-weight: 600;
       font-size: .67em;
-      padding: 0 15px;
+      &:hover {
+        // background-color: #ED8079;
+      }
     }
   }
 }

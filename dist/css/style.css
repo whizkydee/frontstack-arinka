@@ -599,9 +599,9 @@ a {
       font-weight: 600;
       font-size: .67em; }
 
-.misc {
+.cta-wrap {
   float: right; }
-  .misc a {
+  .cta-wrap a {
     -webkit-border-radius: 10em;
     -moz-border-radius: 10em;
     -ms-border-radius: 10em;
@@ -614,7 +614,7 @@ a {
     font-weight: 500;
     color: #f9f9f9;
     font-size: .67em; }
-    .misc a:hover {
+    .cta-wrap a:hover {
       background-color: transparent; }
 
 .details {

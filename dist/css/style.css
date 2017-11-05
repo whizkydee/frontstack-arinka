@@ -607,12 +607,15 @@ a {
     -ms-border-radius: 10em;
     -o-border-radius: 10em;
     border-radius: 10em;
+    border: 2px solid #ED8079;
     background-color: #ED8079;
     letter-spacing: .05em;
-    padding: 10px 30px;
+    padding: 8px 28px;
     font-weight: 500;
     color: #f9f9f9;
     font-size: .67em; }
+    .misc a:hover {
+      background-color: transparent; }
 
 .details {
   margin: 90px auto 0;

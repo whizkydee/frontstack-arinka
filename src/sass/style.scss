@@ -9,10 +9,12 @@
 
 .arinka {
   position: relative;
-}
-
-h1 {
-  line-height: 1.1;
+  h1 {
+    line-height: 1.1;
+  }
+  a {
+    @include transition(all .3s ease-in-out);
+  }
 }
 
 .product-overview {

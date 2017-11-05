@@ -691,12 +691,7 @@ a {
     .cards .card:nth-of-type(3) {
       background-image: url("https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_318,c_thumb,h_360/v1509799747/car-race_vuq5zh.jpg");
       margin-right: 0; }
-  .cards .cta {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  .cards .button {
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
     -ms-border-radius: 2em;
@@ -713,7 +708,7 @@ a {
     color: #D1664E;
     display: block;
     width: 15%; }
-    .cards .cta:hover {
+    .cards .button:hover {
       background: #E7816B;
       color: #fff; }
 

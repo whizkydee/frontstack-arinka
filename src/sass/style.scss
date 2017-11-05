@@ -181,8 +181,7 @@
       margin-right: 0;
     }
   }
-  .cta {
-    @include transition(all .3s ease-in-out);
+  .button {
     @include border-radius(2em);
     border: 2px solid #E7816B;
     text-transform: uppercase;

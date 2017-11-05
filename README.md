@@ -1,1 +1,1 @@
-# [Arinka](https://whizkydee.github.io/frontstack-arinka)
+# [Arinka](https://whizkydee.github.io/olaolu-frontstack-arinka)

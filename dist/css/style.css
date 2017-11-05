@@ -741,7 +741,7 @@ a {
       font-size: 3em;
       color: #fff; }
   .blog .mosque {
-    background: #000 url("https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_809,h_440,c_thumb/v1509799747/mosques_eef3bz.jpg") no-repeat;
+    background: #F2994A url("https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_809,h_440,c_thumb/v1509799747/mosques_eef3bz.jpg") no-repeat;
     float: right;
     height: 100%;
     z-index: -2;
@@ -751,6 +751,7 @@ footer {
   background-color: #fff;
   padding: 30px 50px 50px;
   position: relative;
+  font-size: .9em;
   display: block; }
   footer * {
     font-weight: 500;

@@ -30,8 +30,26 @@ body {
   clear: both;
 }
 
-a {
-  text-decoration: none;
-}
 
 @include browserSelection($basecolor, $off_white);
+
+.arinka {
+  position: relative;
+  h1 {
+    line-height: 1.1;
+  }
+  a {
+    @include transition(all .3s ease-in-out);
+    text-decoration: none;
+  }
+}
+
+.product-overview {
+  @include overviewgradient;
+  position: relative;
+  height: 440px;
+  width: $full;
+  *:not(input) {
+    color: $white;
+  }
+}

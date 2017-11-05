@@ -1,0 +1,70 @@
+// Header
+.app-header {
+  text-transform: uppercase;
+  padding: 30px 40px;
+  position: relative;
+  .logo {
+    float: left;
+    margin: 0;
+    h5 {
+      position: relative;
+      margin: 0 35px 0;
+      &:before {
+        content: url('../../images/plane.png');
+        @include transform( scale(.18) );
+        position: absolute;
+        bottom: 24px;
+        height: 16px;
+        width: 16px;
+        left: -50px;
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Navigation
+.navigation {
+  @include transform(translate(-50%));
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  margin-top: 4px;
+  left: 50%;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    a {
+      @include border-radius(1em);
+      letter-spacing: .02em;
+      padding: 0px 15px;
+      font-weight: 600;
+      font-size: .67em;
+      &:hover {
+        // background-color: #ED8079;
+      }
+    }
+  }
+}
+
+.cta-wrap {
+  float: right;
+  a {
+    @include border-radius(10em);
+    border: 2px solid #ED8079;
+    background-color: #ED8079;
+    letter-spacing: .05em;
+    padding: 8px 28px;
+    font-weight: 500;
+    color: $off_white;
+    font-size: .67em;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

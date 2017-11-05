@@ -1,0 +1,24 @@
+.hero {
+  margin: 90px auto 0;
+  text-align: center;
+  width: 49%;
+  h1 {
+    letter-spacing: .01em;
+    margin-bottom: 80px;
+    word-spacing: .02em;
+    font-weight: 700;
+    font-size: 3em;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  input {
+    border: 3px solid $basecolor;
+    @include border-radius(2em);
+    text-align: center;
+    padding: 15px 20px;
+    color: #C3C0C0;
+    width: 70%;
+  }
+}

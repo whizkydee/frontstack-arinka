@@ -1,0 +1,37 @@
+.blog {
+  display: inline-block;
+  position: relative;
+  height: 440px;
+  width: 100%;
+  > * {
+    display: inline-block;
+    position: relative;
+  }
+  .content {
+    background: $basecolor;
+    @include footergradient;
+    padding: 100px;
+    height: 100%;
+    float: left;
+    width: 40%;
+    h4 {
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      color: #FEBE61;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 3em;
+      color: $white;
+    }
+  }
+  .mosque {
+    background: $basecolor url(
+      'https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_809,h_440,c_thumb/v1509799747/mosques_eef3bz.jpg'
+    ) no-repeat;
+    float: right;
+    height: 100%;
+    z-index: -2;
+    width: 60%;
+  }
+}

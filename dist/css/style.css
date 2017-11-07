@@ -561,16 +561,25 @@ body {
       margin: 0 35px 0; }
       .app-header .logo h5:before {
         content: url("../../images/plane.png");
+        -webkit-transition: bottom 0.3s ease;
+        -moz-transition: bottom 0.3s ease;
+        -ms-transition: bottom 0.3s ease;
+        -o-transition: bottom 0.3s ease;
+        transition: bottom 0.3s ease;
         -webkit-transform: scale(0.18);
         -moz-transform: scale(0.18);
         -ms-transform: scale(0.18);
         -o-transform: scale(0.18);
         transform: scale(0.18);
+        display: inline-block;
         position: absolute;
+        cursor: pointer;
         bottom: 24px;
         height: 16px;
         width: 16px;
         left: -50px; }
+      .app-header .logo h5:hover:before {
+        bottom: 27px; }
       .app-header .logo h5 a {
         color: #fff; }
 
@@ -597,9 +606,11 @@ body {
       -o-border-radius: 1em;
       border-radius: 1em;
       letter-spacing: .02em;
-      padding: 0px 15px;
+      padding: 3px 15px;
       font-weight: 600;
-      font-size: .67em; }
+      font-size: .68em; }
+      .navigation li a:hover {
+        background-color: #ED8079; }
 
 .cta-wrap {
   float: right; }

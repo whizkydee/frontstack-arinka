@@ -11,12 +11,18 @@
       margin: 0 35px 0;
       &:before {
         content: url('../../images/plane.png');
+        @include transition(bottom .3s ease);
         @include transform( scale(.18) );
+        display: inline-block;
         position: absolute;
+        cursor: pointer;
         bottom: 24px;
         height: 16px;
         width: 16px;
         left: -50px;
+      }
+      &:hover:before {
+        bottom: 27px;
       }
       a {
         color: $white;
@@ -42,11 +48,11 @@
     a {
       @include border-radius(1em);
       letter-spacing: .02em;
-      padding: 0px 15px;
+      padding: 3px 15px;
       font-weight: 600;
-      font-size: .67em;
+      font-size: .68em;
       &:hover {
-        // background-color: #ED8079;
+        background-color: #ED8079;
       }
     }
   }

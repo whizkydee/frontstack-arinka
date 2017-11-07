@@ -545,6 +545,9 @@ body {
   .product-overview *:not(input) {
     color: #fff; }
 
+@media (min-width: 1148px) and (max-width: 1277px) {
+  .arinka .hero {
+    width: 54.662%; } }
 /* Header */
 .app-header {
   text-transform: uppercase;

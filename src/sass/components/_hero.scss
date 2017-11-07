@@ -17,8 +17,14 @@
     border: 3px solid $basecolor;
     @include border-radius(2em);
     text-align: center;
-    padding: 15px 20px;
-    color: #C3C0C0;
-    width: 70%;
+    padding: 17px 20px;
+    font-weight: 400;
+    color: #757575;
+    width: 80%;
+    &::placeholder { color: #C3C0C0; }
+    &::-moz-placeholder { color: #C3C0C0; }
+    &::-webkit-input-placeholder { color: #C3C0C0; }
+    &::-ms-input-placeholder { color: #C3C0C0; }
+    &:-ms-input-placeholder { color: #C3C0C0; }
   }
 }

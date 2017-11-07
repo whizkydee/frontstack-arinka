@@ -769,8 +769,9 @@ body {
 footer {
   background-color: #fff;
   padding: 30px 50px 50px;
+  letter-spacing: .009em;
   position: relative;
-  font-size: .9em;
+  font-size: .78em;
   display: block; }
   footer * {
     font-weight: 500;

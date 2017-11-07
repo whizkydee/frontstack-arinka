@@ -751,14 +751,15 @@ body {
     width: 40%; }
     .blog .content h4 {
       text-transform: uppercase;
-      letter-spacing: .02em;
+      letter-spacing: .08em;
+      font-weight: 500;
       color: #FEBE61; }
     .blog .content h1 {
       font-weight: 500;
       font-size: 3em;
       color: #fff; }
   .blog .mosque {
-    background: #F2994A url("https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_809,h_440,c_thumb/v1509799747/mosques_eef3bz.jpg") no-repeat;
+    background: #F2994A url("https://res.cloudinary.com/dqsuy3rzt/image/upload/f_auto,q_auto,g_auto:100,w_900,h_440,c_thumb/v1509799747/mosques_eef3bz.jpg") no-repeat;
     float: right;
     height: 100%;
     z-index: -2;

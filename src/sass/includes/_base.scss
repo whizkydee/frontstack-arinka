@@ -1,9 +1,10 @@
 * {
   font-family: $basefont;
+  outline: 0 !important;
   @include box-sizing;
-  outline: 0;
   &:before,
   &:after {
+    outline: 0 !important;
     @include box-sizing;
   }
 }

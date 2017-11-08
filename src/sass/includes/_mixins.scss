@@ -122,5 +122,11 @@
   background: -o-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
   background: -ms-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
   background: -moz-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
-  background: linear-gradient(to bottom, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);  
+  background: linear-gradient(to bottom, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
+}
+
+@mixin cardimage($urlpart) {
+  background-image: url(
+    'https://res.cloudinary.com/dqsuy3rzt/image/upload/w_370,h_370,f_auto,q_auto,g_auto:100,c_fill/v15097997#{$urlpart}.jpg'
+  );
 }

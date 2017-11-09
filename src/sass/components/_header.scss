@@ -6,22 +6,20 @@
   .logo {
     float: left;
     margin: 0;
-    h5 {
+    position: relative;
+    margin: 0;
+    svg {
+      vertical-align: -13px;
+      margin-right: 10px;
       position: relative;
-      margin: 0;
-      svg {
-        vertical-align: -13px;
-        margin-right: 10px;
-        position: relative;
-        height: 40px;
-        width: 33px;
-        use {
-          fill: $white;
-        }
+      height: 40px;
+      width: 33px;
+      use {
+        fill: $white;
       }
-      a {
-        color: $white;
-      }
+    }
+    a {
+      color: $white;
     }
   }
 }
@@ -35,19 +33,20 @@
   margin-top: 4px;
   left: 50%;
   ul {
+    position: relative;
     padding: 0;
     margin: 0;
   }
   li {
     display: inline-block;
+    padding: 3px 15px;
     a {
-      @include border-radius(1em);
+      @include transition(none);
       letter-spacing: .02em;
-      padding: 3px 15px;
       font-weight: 600;
       font-size: .68em;
       &:hover {
-        background-color: #ED8079;
+        border-bottom: 2px solid $white;
       }
     }
   }

@@ -125,8 +125,14 @@
   background: linear-gradient(to bottom, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
 }
 
-@mixin cardimage($urlpart) {
+@mixin cloudinaryimage(
+  $id,
+  $filename,
+  $width: 370,
+  $height: 370,
+  $crop: 'fill'
+) {
   background-image: url(
-    'https://res.cloudinary.com/dqsuy3rzt/image/upload/w_370,h_370,f_auto,q_auto,g_auto:100,c_fill/v15097997#{$urlpart}.jpg'
+    'https://res.cloudinary.com/dqsuy3rzt/image/upload/w_#{$width},h_#{$height},f_auto,q_auto,g_auto:100,c_#{$crop}/v15097997#{$id}/#{$filename}.jpg'
   );
 }

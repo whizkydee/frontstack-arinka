@@ -25,14 +25,14 @@
       left: 0px;
       top: 0px;
     }
-    &:nth-of-type(1) .background {
-      @include cardimage('51/abuja_rf6vwb');
+    &:nth-of-type(1) > figure {
+      @include cloudinaryimage('51', 'abuja_rf6vwb');
     }
-    &:nth-of-type(2) .background {
-      @include cardimage('55/jos_z7vinm');
+    &:nth-of-type(2) > figure {
+      @include cloudinaryimage('55', 'jos_z7vinm');
     }
-    &:nth-of-type(3) .background {
-      @include cardimage('47/car-race_vuq5zh');
+    &:nth-of-type(3) > figure {
+      @include cloudinaryimage('47', 'car-race_vuq5zh');
     }
     h3 {
       margin-bottom: 0px;

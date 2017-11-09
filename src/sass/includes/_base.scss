@@ -45,8 +45,10 @@ body {
   }
 }
 
-.product-overview {
+main {
   @include overviewgradient;
+  display: inline-block;
+  margin-bottom: 170px;
   position: relative;
   height: 440px;
   width: $full;

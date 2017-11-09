@@ -8,7 +8,7 @@
     position: relative;
   }
   .content {
-    background: $basecolor;
+    background-color: $basecolor;
     @include footergradient;
     padding: 100px;
     height: 100%;
@@ -28,6 +28,8 @@
   }
   .mosque {
     @include cloudinaryimage('47', 'mosques_eef3bz', 900, 440, 'thumb');
+    background-color: $basecolor;
+    background-repeat: no-repeat;
     float: right;
     height: 100%;
     z-index: -2;

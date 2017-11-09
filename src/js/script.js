@@ -1,8 +1,9 @@
-'use strict'
+'use strict';
 
-!function (global) {
-  const links = Array.from( document.querySelectorAll('a[href="#0"]') )
+(global => {
+  const links = document.querySelectorAll('a[href="#0"]')
   
+  // Disable links onclick
   Array.prototype.forEach.call(links, link => {
     link.addEventListener('click', e => {
       e.preventDefault()
@@ -16,10 +17,7 @@
   })
   
   input.addEventListener('blur', e => {
-    e.target.setAttribute(
-      'placeholder',
-      'e.g educational, outdoors, relaxed'
-    )
+    e.target.setAttribute('placeholder', 'e.g educational, outdoors, relaxed')
   })
 
-}(window)
+})(window)

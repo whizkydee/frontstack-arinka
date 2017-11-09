@@ -14,7 +14,7 @@
     height: 360px;
     width: 31.2%;
     &:nth-last-of-type(1) { margin-right: 0; }
-    .background {
+    > figure {
       background-color: rgba(34, 34, 34, .9);
       background-repeat: no-repeat;
       @include border-radius(5px);
@@ -60,7 +60,7 @@
     display: block;
     width: 15%;
     &:hover {
-      background: #E7816B;
+      background-color: #E7816B;
       color: $white;
     }
   }

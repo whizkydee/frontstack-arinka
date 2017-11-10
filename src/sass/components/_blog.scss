@@ -1,6 +1,8 @@
 .blog--container {
   display: inline-block;
   position: relative;
+  cursor: default;
+  font-size: 1em;
   height: 440px;
   width: 100%;
   > * {

@@ -44,15 +44,3 @@ body {
     text-decoration: none;
   }
 }
-
-main {
-  @include overviewgradient;
-  display: inline-block;
-  margin-bottom: 170px;
-  position: relative;
-  height: 440px;
-  width: $full;
-  *:not(input) {
-    color: $white;
-  }
-}

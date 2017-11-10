@@ -1,6 +1,23 @@
-.hero {
+main {
+  @include overviewgradient;
+  display: inline-block;
+  margin-bottom: 170px;
+  position: relative;
+  font-size: 1em;
+  height: 440px;
+  width: $full;
+  *:not(input) {
+    color: $white;
+  }
+}
+
+/* Header */
+@import 'header';
+
+.product-overview {
   margin: 90px auto 0;
   text-align: center;
+  font-size: 1em;
   width: 49%;
   h1 {
     letter-spacing: .01em;

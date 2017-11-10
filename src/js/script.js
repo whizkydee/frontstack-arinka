@@ -1,23 +1,23 @@
 'use strict';
 
-(global => {
+(( global ) => {
   const links = document.querySelectorAll('a[href="#0"]')
   
   // Disable links onclick
   Array.prototype.forEach.call(links, link => {
-    link.addEventListener('click', e => {
-      e.preventDefault()
+    link.addEventListener('click', event => {
+      event.preventDefault()
     })
   })
   
   const input = document.querySelector('input')
 
-  input.addEventListener('focus', e => {
-    e.target.setAttribute('placeholder', '')
+  input.addEventListener('focus', () => {
+    input.setAttribute('placeholder', '')
   })
   
-  input.addEventListener('blur', e => {
-    e.target.setAttribute('placeholder', 'e.g educational, outdoors, relaxed')
+  input.addEventListener('blur', () => {
+    input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed')
   })
 
 })(window)

@@ -1,12 +1,9 @@
 {
   "name": "frontstack-arinka",
   "version": "1.0.0",
-  "description": "Some app",
+  "description": "A super-responsive website for the FrontStack Hackathon",
   "main": "src/script.js",
   "license": "MIT",
-  "dependencies": {
-    "babel-polyfill": "^6.26.0"
-  },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
     "fs": "0.0.1-security",

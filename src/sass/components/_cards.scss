@@ -11,6 +11,7 @@
     position: relative;
     margin-right: 30px;
     text-align: left;
+    font-size: 1em;
     height: 360px;
     width: 31.2%;
     &:nth-last-of-type(1) { margin-right: 0; }
@@ -42,6 +43,7 @@
     }
     p {
       font-weight: 600;
+      font-size: 1em;
       color: #D78E52;
       margin: 0px;
     }

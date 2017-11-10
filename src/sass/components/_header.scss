@@ -52,19 +52,18 @@
   }
 }
 
-.cta-wrap {
+.cta-btn {
+  @include border-radius(10em);
+  border: 2px solid #ED8079;
+  background-color: #ED8079;
+  letter-spacing: .05em;
+  padding: 8px 28px;
+  color: $off_white;
+  font-weight: 500;
+  font-size: .67em;
+  margin-top: 4px;
   float: right;
-  a {
-    @include border-radius(10em);
-    border: 2px solid #ED8079;
-    background-color: #ED8079;
-    letter-spacing: .05em;
-    padding: 8px 28px;
-    font-weight: 500;
-    color: $off_white;
-    font-size: .67em;
-    &:hover {
-      background-color: transparent;
-    }
+  &:hover {
+    background-color: transparent;
   }
 }

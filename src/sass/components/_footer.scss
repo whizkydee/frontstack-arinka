@@ -11,9 +11,11 @@ footer {
     color: #A9A9A9;
   }
   a {
-    float: left;
-  }
-  span {
-    float: right;
+    &:nth-child(odd) {
+      float: left;
+    }
+    &:nth-child(even) {
+      float: right;
+    }
   }
 }

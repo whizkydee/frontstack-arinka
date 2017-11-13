@@ -1,11 +1,13 @@
 'use strict';
 
 (( global ) => {
+  'use strict'
+
   const links = document.querySelectorAll('a[href="#0"]')
   
-  // Disable links onclick
-  Array.prototype.forEach.call(links, link => {
-    link.addEventListener('click', event => {
+  // Disable link actions onclick
+  Array.prototype.forEach.call(links, ( link ) => {
+    link.addEventListener('click', ( event ) => {
       event.preventDefault()
     })
   })

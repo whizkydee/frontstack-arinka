@@ -1,5 +1,5 @@
 // Globals
-@media (min-width: 800px) and (max-width: 1351px) {
+@media (min-width: 700px) and (max-width: 1351px) {
   .arinka {
     main { margin-bottom: 140px; font-size: .95em; }
     .product-overview {
@@ -22,17 +22,13 @@
 }
 
 @media (min-width: 1060px) and (max-width: 1087px) {
-  .arinka {
-    .about { font-size: .87em; }
-  }
+  .arinka .about { font-size: .87em; }
 }
-// End Globals
 
 @media (min-width: 900px) and (max-width: 1019px) {
-  .arinka {
-    .cards--container { width: 90%; }
-  }
+  .arinka .cards--container { width: 90%; }
 }
+// End Globals
 
 @media (min-width: 1000px) and (max-width: 1060px) {
   .arinka {
@@ -124,7 +120,7 @@
   .arinka {
     .app-header { font-size: 1.089em; }
     .product-overview {
-      margin-top: 120px;
+      margin-top: 110px;
       h1 { margin-bottom: 100px; }
       p { margin-bottom: 6px; }
       input { padding: 14px 20px; }
@@ -139,7 +135,8 @@
     .app-header { font-size: 1.08em; }
     .navigation li a { letter-spacing: .05em; }
     .product-overview {
-      margin-top: 120px;
+      margin-top: 110px;
+      font-size: 1.13em;
       width: 68%;
       h1 { margin-bottom: 100px; }
       p { margin-bottom: 5px; }
@@ -149,7 +146,7 @@
     .cards--container {
       width: 98%;
       .card { margin-right: 10px; }
-      .button { margin-bottom: 90px; }
+      .button { margin-bottom: 60px; }
     }
     .blog--container {
       height: 350px;
@@ -157,5 +154,56 @@
       .mosque { width: 55%; }
     }
     footer { font-size: .9em; }
+  }
+}
+
+@media (max-width: 851px) {
+  .arinka {
+    .app-header .logo svg { width: 30px; margin-right: 7px; }
+    .cards--container .card {
+      padding-top: 170px;
+      margin-right: 5px;
+      height: 270px;
+      width: 32%;
+    } 
+  }
+}
+
+@media (min-width: 786px) and (max-width: 830px) {
+  html { font-size: 14px; }
+  .arinka {
+    .product-overview { font-size: 1.145em; }
+    .cards--container .card { width: 32.6%; }
+  }
+}
+
+@media (max-width: 785px) {
+  html { font-size: 13px; }
+  .arinka {
+    main { font-size: .98em; margin-bottom: 100px; }
+    .product-overview { margin-top: 120px; }
+    .cards--container {
+      .card { padding: 180px 20px 0; }
+      .button {
+        margin: 50px auto;
+      }
+    }
+    .blog--container {
+      height: 300px;
+      .content { padding: 80px 50px; }
+    }
+  }
+}
+
+@media (max-width: 743px) {
+  .arinka {
+    .app-header { font-size: 1.15em; }
+    .product-overview { width: 76%; }
+  }
+}
+
+@media (max-width: 683px) {
+  .arinka {
+    .product-overview { width: 83%; }
   }
 }

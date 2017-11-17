@@ -52,15 +52,14 @@
     @include border-radius(2em);
     border: 2px solid #E7816B;
     text-transform: uppercase;
+    display: inline-block;
     letter-spacing: 1.8px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin: 100px auto;
     font-weight: 500;
     font-size: .9em;
     color: #D1664E;
-    display: block;
-    width: 15%;
     &:hover {
       background-color: #E7816B;
       color: $white;

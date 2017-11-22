@@ -1,4 +1,5 @@
 .blog--container {
+  @include gradient(#E36F55, '180deg, #E36E55 0%, #D78F52 100%');
   display: inline-block;
   position: relative;
   cursor: default;

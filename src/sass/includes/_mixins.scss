@@ -107,22 +107,16 @@
   }
 }
 
-@mixin overviewgradient() {
-  background: #EC5857;
-  background: -webkit-linear-gradient($expr);
-  background: -o-linear-gradient($expr);
-  background: -ms-linear-gradient($expr);
-  background: -moz-linear-gradient($expr);
-  background: linear-gradient($expr2);
-}
-
-@mixin footergradient() {
-  background: #E36F55;
-  background: -webkit-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
-  background: -o-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
-  background: -ms-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
-  background: -moz-linear-gradient(top, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
-  background: linear-gradient(to bottom, rgb(235, 146, 127) 0%, rgb(215, 143, 82) 100%);
+@mixin gradient(
+  $defaultBackground,
+  $value
+) {
+  background: #{$defaultBackground};
+  background: -webkit-linear-gradient(#{$value});
+  background: -o-linear-gradient(#{$value});
+  background: -ms-linear-gradient(#{$value});
+  background: -moz-linear-gradient(#{$value});
+  background: linear-gradient(#{$value});
 }
 
 @mixin cloudinaryimage(
@@ -135,4 +129,9 @@
   background-image: url(
     'https://res.cloudinary.com/dqsuy3rzt/image/upload/w_#{$width},h_#{$height},f_auto,q_auto,g_auto:100,c_#{$crop}/v15097997#{$id}/#{$filename}.jpg'
   );
+}
+
+@mixin clip-path($value) {
+  -webkit-clip-path: #{$value};
+  clip-path:          #{$value};
 }

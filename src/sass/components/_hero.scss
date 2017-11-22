@@ -1,5 +1,5 @@
 main {
-  @include overviewgradient;
+  @include gradient(#EC5857, '180deg, #EB5757 0%, #D59152 100%');
   display: inline-block;
   margin-bottom: 170px;
   position: relative;

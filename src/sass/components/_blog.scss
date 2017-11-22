@@ -4,38 +4,43 @@
   position: relative;
   cursor: default;
   font-size: 1em;
-  height: 440px;
+  height: 500px;
   width: 100%;
   > * {
     display: inline-block;
     position: relative;
   }
   .content {
-    background-color: $basecolor;
-    @include footergradient;
-    padding: 100px;
+    background-color: transparent;
+    padding: 120px 100px;
+    position: absolute;
+    margin-left: 70px;
+    font-size: 1.1em;
     height: 100%;
     float: left;
-    width: 40%;
+    width: 45%;
+    z-index: 1;
     h4 {
       text-transform: uppercase;
       letter-spacing: 1.8px;
       font-weight: 500;
+      font-size: .9em;
       color: #FEBE61;
     }
     h1 {
-      font-weight: 500;
-      font-size: 3em;
+      word-spacing: .02em;
+      font-size: 3.4em;
+      font-weight: 600;
       color: $white;
     }
   }
   .mosque {
-    @include cloudinaryimage('47', 'mosques_eef3bz', 900, 440, 'thumb');
+    @include cloudinaryimage('47', 'mosques_eef3bz', 1000, 500, 'thumb');
+    @include clip-path(polygon(20% 0, 100% 0, 100% 100%, 0 100%));
     background-color: $basecolor;
     background-repeat: no-repeat;
     float: right;
     height: 100%;
-    z-index: -2;
-    width: 60%;
+    width: 68%;
   }
 }

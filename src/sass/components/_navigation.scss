@@ -16,7 +16,7 @@
     display: inline-block;
     padding: 3px 15px;
     a {
-      @include transition(none);
+      @include transition(border-bottom .2s ease);
       letter-spacing: .02em;
       font-weight: 600;
       font-size: .68em;

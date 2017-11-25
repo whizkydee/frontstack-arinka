@@ -4,7 +4,7 @@ main {
   margin-bottom: 170px;
   position: relative;
   font-size: 1em;
-  height: 440px;
+  height: 478px;
   width: $full;
   *:not(input) {
     color: $white;
@@ -15,16 +15,16 @@ main {
 @import 'header';
 
 .product-overview {
-  margin: 90px auto 0;
+  margin: 100px auto 0;
   text-align: center;
   font-size: 1em;
-  width: 49%;
+  width: 51%;
   h1 {
     letter-spacing: .01em;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     word-spacing: .02em;
+    font-size: 3.3em;
     font-weight: 700;
-    font-size: 3em;
   }
   p {
     margin-bottom: 20px;

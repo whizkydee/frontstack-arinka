@@ -15,14 +15,15 @@
   li {
     display: inline-block;
     padding: 3px 15px;
+    cursor: pointer;
+    &:hover a {
+      border-bottom: 2px solid $white;
+    }
     a {
-      @include transition(border-bottom .2s ease);
+      @include transition(border-bottom .3s ease);
       letter-spacing: .02em;
       font-weight: 600;
       font-size: .68em;
-      &:hover {
-        border-bottom: 2px solid $white;
-      }
     }
   }
 }

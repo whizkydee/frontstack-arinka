@@ -1,22 +1,7 @@
-@media (min-width: 900px) and (max-width: 1030px) {
-  .arinka {
-    .product-overview { width: 68.193%; }
-    .cards--container {
-      width: 90.5%;
-      .card {
-        margin-right: 15px;
-        font-size: .91em;
-        width: 31.2%;
-      }
-      .button { font-size: .8em; }
-    }
-  }
-}
-
-@media (max-width: 999px) {
+@media screen and (max-width: 999px) {
   .arinka {
     .cards--container {
-      .card { padding-top: 200px; height: 300px; }
+      .card { padding-top: 205px; height: 300px; }
       .button { margin: 70px auto; }
     }
     .blog--container { height: 400px; }
@@ -24,13 +9,13 @@
   }
 }
 
-@media (min-width: 900px) and (max-width: 999px) {
+@media screen and (min-width: 900px) and (max-width: 999px) {
   html { font-size: 16px; }
   .arinka {
     .app-header { font-size: 1.089em; }
     .product-overview {
-      margin-top: 110px;
-      h1 { margin-bottom: 100px; }
+      margin-top: 125px;
+      h1 { margin-bottom: 110px; }
       p { margin-bottom: 6px; }
       input { padding: 14px 20px; }
     }
@@ -38,16 +23,16 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media screen and (min-width: 600px) and (max-width: 899px) {
   html { font-size: 15px; }
   .arinka {
     .app-header { font-size: 1.08em; }
     .navigation li a { letter-spacing: .05em; }
     .product-overview {
-      margin-top: 110px;
+      margin-top: 125px;
       font-size: 1.13em;
-      width: 68%;
-      h1 { margin-bottom: 100px; }
+      width: 80%;
+      h1 { margin-bottom: 110px; }
       p { margin-bottom: 5px; }
       input { padding: 12px 20px; }
     }
@@ -66,11 +51,13 @@
   }
 }
 
-@media (max-width: 851px) {
+@media screen and (max-width: 851px) {
   .arinka {
     .app-header .logo svg { width: 30px; margin-right: 7px; }
+    .navigation { left: 46%; margin-top: 10px; }
+    .cta-btn { margin-top: 6px; }
     .cards--container .card {
-      padding-top: 170px;
+      padding-top: 180px;
       margin-right: 5px;
       height: 270px;
       width: 32%;
@@ -78,7 +65,7 @@
   }
 }
 
-@media (min-width: 786px) and (max-width: 830px) {
+@media screen and (min-width: 786px) and (max-width: 830px) {
   html { font-size: 14px; }
   .arinka {
     .product-overview { font-size: 1.145em; }
@@ -86,13 +73,16 @@
   }
 }
 
-@media (max-width: 785px) {
+@media screen and (max-width: 785px) {
   html { font-size: 13px; }
   .arinka {
     main { font-size: .98em; margin-bottom: 100px; }
-    .product-overview { margin-top: 120px; }
+    .product-overview { margin-top: 135px; }
     .cards--container {
-      .card { padding: 180px 20px 0; }
+      .card {
+        padding: 160px 20px 0;
+        height: 240px;
+      }
       .button {
         margin: 50px auto;
       }
@@ -104,9 +94,23 @@
   }
 }
 
-@media (max-width: 743px) {
+@media screen and (max-width: 743px) {
   .arinka {
     .app-header { font-size: 1.15em; }
-    .product-overview { width: 76%; }
+    .product-overview {
+      width: 87%;
+      h1 { margin-bottom: 115px; }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .arinka {
+    .product-overview { width: 85%; }
+    .cards--container .card {
+      padding-top: 135px;
+      height: 220px;
+      width: 32.5%;
+    }
   }
 }

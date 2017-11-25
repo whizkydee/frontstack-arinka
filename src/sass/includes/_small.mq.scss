@@ -1,5 +1,46 @@
-@media (max-width: 683px) {
+@media screen and (max-width: 656px) {
   .arinka {
-    .product-overview { width: 83%; }
+    .product-overview { width: 88%; }
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .arinka {
+    main { height: 440px; font-size: .95em; }
+    .product-overview {
+      margin-top: 105px;
+      width: 92%;
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  html { font-size: 13px; }
+  .arinka {
+    .app-header {
+      padding: 15px 20px;
+    }
+    .product-overview {
+      margin-top: 125px;
+      // font-size: 1.13em;
+      input { padding: 10px 20px; }
+    }
+    .about { width: 95%; }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .arinka {
+    .cards--container {
+      width: 60%;
+      .card {
+        margin: 0 auto 20px;
+        display: block;
+        width: 100%;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }

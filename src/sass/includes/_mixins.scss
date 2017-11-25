@@ -132,6 +132,6 @@
 }
 
 @mixin clip-path($value) {
-  -webkit-clip-path: #{$value};
+  -webkit-clip-path:  #{$value};
   clip-path:          #{$value};
 }

@@ -27,15 +27,17 @@
           </defs>
         </svg>
         Arinka
-      </a></h5>
-      <nav class="navigation">
-        <ul>
-          <li><a href="#0">Locations</a></li>
-          <li><a href="#0">Moods</a></li>
-          <li><a href="#0">Blog</a></li>
-        </ul>
-      </nav>
-      <a href="#0" class="cta-btn">Login / Signup</a>
+      </a></h5>   
+      <section class="right">
+        <nav class="navigation">
+          <ul>
+            <li><a href="#0">Locations</a></li>
+            <li><a href="#0">Moods</a></li>
+            <li><a href="#0">Blog</a></li>
+          </ul>
+        </nav>
+        <a href="#0" class="cta-btn">Login / Signup</a>
+      </section>
     </header>
     
     <section class="product-overview">
@@ -54,8 +56,11 @@
       contained the variant lorem ipsum most common today.
     </p>
   </section>
-  
-  <section class="cards--container">
+ 
+  <section
+    class="cards-section"
+    data-hint="Scroll left or right to reveal"
+    >
     <section class="card">
       <figure></figure>
       <h3>Bauchi Park</h3>
@@ -73,11 +78,24 @@
       <h3>Abuja Car Racing</h3>
       <p>Get Your Adrenaline Pumping</p>
     </section>
+
+    <div class="see-more">
+      <h2><div class="svg">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 64 64"><path
+          d="M38.828 54.828l20-20c1.562-1.562 1.562-4.095 0-5.657l-20-20c-1.562-1.562-4.095-1.562-5.657 0s-1.562 4.095 0 5.657l13.172 13.172h-38.343c-2.209 0-4 1.791-4 4s1.791 4 4 4h38.343l-13.172 13.172c-0.781 0.781-1.172 1.805-1.172 2.828s0.391 2.047 1.172 2.828c1.562 1.562 4.095 1.562 5.657 0z" /></svg>
+        </div>
+        See More
+      </h2>
+    </div>
     
     <a class="button" href="#0">See More</a>
   </section>
   
-  <section class="blog--container">
+  <section class="blog-section">
     <section class="content">
       <h4>On The Blog</h4>
       <h1>Hanging out in Borno</h1>
@@ -90,6 +108,7 @@
     <a href="https://twitter.com/mrolaolu" target="_blank">Copyright Olaoluwa, 2017</a>
   </footer>
   
-  <script src="src/js/script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="dist/js/script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="viewport.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

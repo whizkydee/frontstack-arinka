@@ -16,12 +16,7 @@ const paths = {
   script: 'src/js/**/*.js'
 }
 
-const allTasks = [
-  'server',
-  'watch',
-  'transpile',
-  'sass'
-]
+const allTasks = ['server', 'watch', 'transpile', 'sass']
 
 gulp.task('sass', () => {
   return gulp.src(paths.sass)
@@ -40,10 +35,10 @@ gulp.task('transpile', () => {
     .pipe(gulp.dest('dist/js'))
 })
 
-gulp.task( 'server', () => connect.server({ port: 8080, livereload: true }) )
-gulp.task( 'reload', () => gulp.src('./index.html').pipe(connect.reload()) )
+gulp.task( 'server', () => connect.server({livereload: true}) )
+gulp.task( 'reload', () => gulp.src(paths.index).pipe(connect.reload()) )
 
-// watch for changes and reload server on change.
+// handle changes and reload server afterwards.
 gulp.task('watch', () => {
   gulp.watch(paths.script, ['transpile'])
   gulp.watch(paths.sass, ['sass'])

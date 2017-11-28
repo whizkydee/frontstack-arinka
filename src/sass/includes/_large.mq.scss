@@ -1,7 +1,7 @@
 @media screen and (min-width: 900px) and (max-width: 1030px) {
   .arinka {
     .product-overview { width: 70.193%; }
-    .cards--container {
+    .cards-section {
       width: 90.5%;
       .card {
         margin-right: 15px;
@@ -23,8 +23,8 @@
       p { margin-bottom: 10px; }
     }
     .about { width: 91%; font-size: .9em; }
-    .cards--container .card { padding-top: 225px; height: 330px; }
-    .blog--container {
+    .cards-section .card { padding-top: 225px; height: 330px; }
+    .blog-section {
       font-size: .9em;
       .content {
         padding: 100px;
@@ -41,7 +41,7 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1019px) {
-  .arinka .cards--container { width: 90%; }
+  .arinka .cards-section { width: 90%; }
 }
 // End Globals
 
@@ -56,15 +56,15 @@
       input { padding: 14px 20px; }
     }
     .about { width: 92%; font-size: .8376em; }
-    .cards--container {
-      width: 87%;
+    .cards-section {
+      width: 94%;
       .card {
         margin-right: 10px;
         font-size: .9em;
         width: 32.28%;
       }
     }
-    .blog--container {
+    .blog-section {
       .content { width: 47%; }
       .mosque { width: 53%; }
     }
@@ -74,8 +74,8 @@
 @media screen and (min-width: 1031px) and (max-width: 1137px) {
   .arinka {
     .product-overview { width: 67%; }
-    .cards--container {
-      width: 90%;
+    .cards-section {
+      width: 95%;
       .card {
         margin-right: 15px;
         font-size: .93em;
@@ -90,16 +90,22 @@
   .arinka {
     .product-overview { width: 63%; }
     .about { width: 80%; }
-    .cards--container {
-      width: 82%;
+    .cards-section {
+      width: 86%;
       .card {
         margin-right: 20px;
         font-size: .94em;
       }
     }
-    .blog--container {
+    .blog-section {
       .content { width: 45%; }
       .mosque { width: 70%; }
     }
+  }
+}
+
+@media screen and (min-width: 1138px) and (max-width: 1220px) {
+  .arinka .cards-section {
+    width: 93%;
   }
 }

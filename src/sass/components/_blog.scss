@@ -1,5 +1,5 @@
-.blog--container {
-  @include gradient(#E36F55, '180deg, #E36E55 0%, #D78F52 100%');
+.blog-section {
+  @include gradient($color: #E36F55, $value: '180deg, #E36E55 0%, #D78F52 100%');
   display: inline-block;
   position: relative;
   cursor: default;
@@ -35,7 +35,13 @@
     }
   }
   .mosque {
-    @include cloudinaryimage('47', 'mosques_eef3bz', 1000, 500, 'thumb');
+    @include cloudinaryimage(
+      $filename: 'mosques_eef3bz',
+      $crop: 'thumb',
+      $width: 1000,
+      $height: 500,
+      $id: '47'
+    );
     @include clip-path(polygon(20% 0, 100% 0, 100% 100%, 0 100%));
     background-color: $basecolor;
     background-repeat: no-repeat;

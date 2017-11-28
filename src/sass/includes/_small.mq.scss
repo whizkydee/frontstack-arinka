@@ -1,7 +1,5 @@
 @media screen and (max-width: 656px) {
-  .arinka {
-    .product-overview { width: 88%; }
-  }
+  .arinka .product-overview { width: 88%; }
 }
 
 @media screen and (max-width: 634px) {
@@ -14,33 +12,41 @@
   }
 }
 
+@media screen and (max-width: 620px) {
+  @include cardsizing(
+    $valign: -20.5px,
+    $height: 250px,
+    $width: 45%,
+    $factor: 90
+  );
+}
+
 @media screen and (max-width: 599px) {
-  html { font-size: 13px; }
+  @include cardsizing($valign: -23.5px);
+  html { font-size: 12.5px; }
   .arinka {
     .app-header {
-      padding: 15px 20px;
+      padding: 25px 20px;
+      font-size: 1.18em;
+      .logo svg {
+        vertical-align: -16px;
+        margin-right: 4px;
+        height: 43px;
+        width: 22px;
+      }
+    }
+    .cta-btn {
+      padding-top: 5px 15px;
+      margin-top: 9px;
+      font-size: .7em;
     }
     .product-overview {
       margin-top: 125px;
-      // font-size: 1.13em;
+      font-size: 1.13em;
+      h1 { margin-bottom: 95px; }
       input { padding: 10px 20px; }
     }
-    .about { width: 95%; }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .arinka {
-    .cards--container {
-      width: 60%;
-      .card {
-        margin: 0 auto 20px;
-        display: block;
-        width: 100%;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
+    .cards-section { width: 100%; }
+    .about { width: 95%; font-size: .9em; }  
   }
 }

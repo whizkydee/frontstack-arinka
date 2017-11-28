@@ -11,7 +11,7 @@
   @each $transition in $transitions {
     $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
   }
-
+  
   -webkit-transition: $unfoldedTransitions;
   -moz-transition: $unfoldedTransitions;
   -ms-transition: $unfoldedTransitions;
@@ -26,7 +26,7 @@
   $easing: null; // Browser default is ease, which is what we want
   $delay: null; // Browser default is 0, which is what we want
   $defaultProperties: ($property, $duration, $easing, $delay);
-
+  
   // Grab transition properties if they exist
   $unfoldedTransition: ();
   @for $i from 1 through length($defaultProperties) {
@@ -38,7 +38,7 @@
     }
     $unfoldedTransition: append($unfoldedTransition, $p);
   }
-
+  
   @return $unfoldedTransition;
 }
 
@@ -84,34 +84,34 @@
   #{$property}: calc(#{$expression});
 }
 
-@mixin browserSelection ($bgColor, $fgColor) {
+@mixin browserSelection ($bgcolor, $foreground) {
   ::selection {
-    background: lighten($bgColor, 9%);
-    color: $fgColor;
+    background: lighten($bgcolor, 9%);
+    color: $foreground;
   }
   ::-webkit-selection {
-    background: lighten($bgColor, 9%);
-    color: $fgColor;
+    background: lighten($bgcolor, 9%);
+    color: $foreground;
   }
   ::-moz-selection {
-    background: lighten($bgColor, 9%);
-    color: $fgColor;
+    background: lighten($bgcolor, 9%);
+    color: $foreground;
   }
   ::-ms-selection {
-    background: lighten($bgColor, 9%);
-    color: $fgColor;
+    background: lighten($bgcolor, 9%);
+    color: $foreground;
   }
   ::-o-selection {
-    background: lighten($bgColor, 9%);
-    color: $fgColor;
+    background: lighten($bgcolor, 9%);
+    color: $foreground;
   }
 }
 
 @mixin gradient(
-  $defaultBackground,
+  $color,
   $value
 ) {
-  background: #{$defaultBackground};
+  background: #{$color};
   background: -webkit-linear-gradient(#{$value});
   background: -o-linear-gradient(#{$value});
   background: -ms-linear-gradient(#{$value});
@@ -134,4 +134,43 @@
 @mixin clip-path($value) {
   -webkit-clip-path:  #{$value};
   clip-path:          #{$value};
+}
+
+@mixin cardsizing(
+  $fontsize: null,
+  $valign: null,
+  $height: null,
+  $factor: null,
+  $width: null
+) {
+  .arinka .cards-section {
+    $padtop: null;
+    $btnwidth: null;
+    @if ($height != null) { $padtop: $height - $factor; }
+    @if ($width != null) { $btnwidth: $width - 2; }
+    @if ($fontsize != null) { font-size: $fontsize; }
+    .card {
+      @if ($height != null) {
+        padding-top: #{$padtop};
+        height: #{$height};
+      }
+      @if ($width != null) { width: #{$width}; }
+    }
+    .see-more {
+      @if ($valign != null) { vertical-align: $valign; }
+      @if ($width != null) { width: #{$btnwidth}; }
+      @if ($height != null) { height: #{$height}; }
+    }
+  }
+}
+
+@mixin scrollbar(
+  $value: 'to right, transparent, white 10px, white 90%, transparent'
+) {
+  mask-image:         -webkit-linear-gradient(#{$value});
+  mask-image:            -moz-linear-gradient(#{$value});
+  mask-image:                 linear-gradient(#{$value});
+  -webkit-mask-image: -webkit-linear-gradient(#{$value});
+  -webkit-mask-image:    -moz-linear-gradient(#{$value});
+  -webkit-mask-image:         linear-gradient(#{$value});
 }

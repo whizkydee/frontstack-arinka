@@ -21,5 +21,4 @@
   input.addEventListener('blur', () => {
     input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed')
   })
-
 })(window)

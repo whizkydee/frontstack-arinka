@@ -13,12 +13,11 @@
   <main class="site-hero">
     <header class="app-header">
       <h5 class="logo"><a href="#0">
-        <svg
+        <svg version="1.1"
           viewBox="0 0 35 40"
-          version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        ><g transform="translate(680 486)"><g>
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g transform="translate(680 486)"><g>
           <use xlink:href="#path0_fill" transform="translate(-680 -486)" />
           </g></g>
           <defs><path
@@ -29,6 +28,7 @@
         Arinka
       </a></h5>   
       <section class="right">
+        <div class="toggle-menu"></div>
         <nav class="navigation">
           <ul>
             <li><a href="#0">Locations</a></li>
@@ -42,8 +42,11 @@
     
     <section class="product-overview">
       <h1 class="hero-text">Discover the best places to travel to in Nigeria</h1>
-      <p class="description">What type of adventure are you looking for?</p>
-      <input type="search" placeholder="e.g educational, outdoors, relaxed" />
+      
+      <section class="search-section">
+        <label for="search" class="description">What type of adventure are you looking for?</label>
+        <input id="search" type="search" placeholder="e.g educational, outdoors, relaxed" />
+      </section>
     </section>
   </main>
 
@@ -61,28 +64,36 @@
     class="cards-section"
     data-hint="Scroll left or right to reveal"
     >
-    <section class="card">
-      <figure></figure>
+    <div class="card">
+      <img
+        alt="Bauchi Park"
+        src="https://res.cloudinary.com/dqsuy3rzt/image/upload/w_370,h_370,f_auto,q_auto,g_auto:100,c_fill/v1509799751/abuja_rf6vwb.jpg"
+      />
       <h3>Bauchi Park</h3>
       <p>Relaxed holiday for two</p>
-    </section>
+    </div>
     
-    <section class="card">
-      <figure></figure>
+    <div class="card">
+      <img
+        alt="Jos, Plateau"
+        src="https://res.cloudinary.com/dqsuy3rzt/image/upload/w_370,h_370,f_auto,q_auto,g_auto:100,c_fill/v1509799755/jos_z7vinm.jpg"
+      />
       <h3>Jos, Plateau</h3>
       <p>Experience Nigeria in the 60s</p>
-    </section>
+    </div>
     
-    <section class="card">
-      <figure></figure>
+    <div class="card">
+      <img 
+        alt="Abuja Car Racing"
+        src="https://res.cloudinary.com/dqsuy3rzt/image/upload/w_370,h_370,f_auto,q_auto,g_auto:100,c_fill/v1509799747/car-race_vuq5zh.jpg"
+      />
       <h3>Abuja Car Racing</h3>
       <p>Get Your Adrenaline Pumping</p>
-    </section>
+    </div>
 
-    <div class="see-more">
+    <aside class="see-more">
       <h2><div class="svg">
-        <svg
-          version="1.1"
+        <svg version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 64 64"><path
@@ -90,17 +101,22 @@
         </div>
         See More
       </h2>
-    </div>
+    </aside>
     
     <a class="button" href="#0">See More</a>
   </section>
   
   <section class="blog-section">
-    <section class="content">
+    <div class="content">
       <h4>On The Blog</h4>
       <h1>Hanging out in Borno</h1>
-    </section>
-    <figure class="mosque"></figure>
+    </div>
+    
+    <img
+      class="mosque"
+      alt="Mosque"
+      src="https://res.cloudinary.com/dqsuy3rzt/image/upload/w_1000,h_500,f_auto,q_auto,g_auto:100,c_thumb/v1509799747/mosques_eef3bz.jpg"
+    />
   </section>
   
   <footer id="app-footer">

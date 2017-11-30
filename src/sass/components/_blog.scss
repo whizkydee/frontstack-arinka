@@ -14,39 +14,38 @@
     background-color: transparent;
     padding: 120px 95px;
     position: absolute;
-    margin-left: 70px;
-    font-size: 1.1em;
+    margin-left: 75px;
+    font-size: 1em;
     height: 100%;
     float: left;
-    width: 45%;
+    @media screen and (min-width: 1201px) {
+      width: 45%;
+    }
     z-index: 1;
     h4 {
       text-transform: uppercase;
       letter-spacing: 1.8px;
+      margin-bottom: 30px;
       font-weight: 500;
-      font-size: .9em;
+      font-size: 1em;
       color: #FEBE61;
     }
     h1 {
       word-spacing: .02em;
-      font-size: 3.4em;
+      font-size: 3.75em;
+      line-height: 77px;
       font-weight: 600;
       color: $white;
+      margin: 0px;
     }
   }
   .mosque {
-    @include cloudinaryimage(
-      $filename: 'mosques_eef3bz',
-      $crop: 'thumb',
-      $width: 1000,
-      $height: 500,
-      $id: '47'
-    );
-    @include clip-path(polygon(20% 0, 100% 0, 100% 100%, 0 100%));
+    @media screen and (min-width: 1201px) {
+      @include clip-path(polygon(20% 0, 100% 0, 100% 100%, 0 100%));
+      width: 68%;
+    }
     background-color: $basecolor;
-    background-repeat: no-repeat;
     float: right;
     height: 100%;
-    width: 68%;
   }
 }

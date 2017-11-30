@@ -1,3 +1,6 @@
+@media screen and (max-width: 699px) {
+  // .arinka .product-overview h1 { margin-bottom: 115px; }
+}
 @media screen and (max-width: 656px) {
   .arinka .product-overview { width: 88%; }
 }
@@ -25,8 +28,9 @@
   @include cardsizing($valign: -23.5px);
   html { font-size: 12.5px; }
   .arinka {
+    main { height: 390px; }
     .app-header {
-      padding: 25px 20px;
+      padding: 20px 15px;
       font-size: 1.18em;
       .logo svg {
         vertical-align: -16px;
@@ -36,17 +40,92 @@
       }
     }
     .cta-btn {
-      padding-top: 5px 15px;
+      padding: 5px 15px;
       margin-top: 9px;
       font-size: .7em;
     }
     .product-overview {
-      margin-top: 125px;
+      margin-top: 115px;
       font-size: 1.13em;
-      h1 { margin-bottom: 95px; }
+    }
+    .search-section {
       input { padding: 10px 20px; }
     }
     .cards-section { width: 100%; }
     .about { width: 95%; font-size: .9em; }  
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .arinka .product-overview {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .arinka {
+    .navigation {
+      margin-top: 11px;
+      left: 46%;
+      li { padding: 3px 10px; }
+    }
+    .cta-btn { padding: 4px 12px; margin-top: 11px; }
+    .product-overview {
+      width: 97%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .arinka {
+    main { font-size: .9em; }
+    .product-overview { margin-top: 125px; }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .arinka {
+    main { font-size: .9em; }
+    .app-header {
+      padding: 20px;
+      .logo { margin-top: -1px; }
+    }
+    .product-overview {
+      margin-top: 115px;
+    }
+  }
+  .navigation {
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    @include scrollbar;
+    overflow-x: auto;
+  }
+  #__scrrenSizeIndicator {
+    right: unset !important;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .arinka .product-overview {
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .arinka {
+    main { height: 330px; }
+    .app-header {
+      padding-right: 13px;
+      padding-left: 13px;
+    }
+    .product-overview {
+      margin-top: 85px;
+      font-size: .8em;
+      width: 96%;
+    }
+    .search-section {
+      input { padding-bottom: 8px; padding-top: 8px; }
+    }
   }
 }

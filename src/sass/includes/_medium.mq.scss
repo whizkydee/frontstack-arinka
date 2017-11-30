@@ -1,5 +1,7 @@
 @media screen and (max-width: 999px) {
   .arinka {
+    .product-overview h1 { font-size: 3.9em; }
+    .search-section { margin-top: 90px; }
     .cards-section {
       .card { padding-top: 185px; height: 280px; }
       .button { margin: 70px auto; }
@@ -15,25 +17,29 @@
     .app-header { font-size: 1.089em; }
     .product-overview {
       margin-top: 125px;
-      h1 { margin-bottom: 110px; }
-      p { margin-bottom: 6px; }
+    }
+    .search-section {
+      label { margin-bottom: 6px; }
       input { padding: 14px 20px; }
     }
     .cards-section { width: 92.5%; }
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (min-width: 320px) and (max-width: 899px) {
   html { font-size: 15px; }
   .arinka {
-    .app-header { font-size: 1.08em; }
-    .navigation li a { letter-spacing: .05em; }
+    .app-header { font-size: 1.2em; }
+    @media screen and (min-width: 461px) {
+      .navigation li a { letter-spacing: .05em; }
+    }
     .product-overview {
-      margin-top: 125px;
+      margin-top: 120px;
       font-size: 1.13em;
-      width: 80%;
-      h1 { margin-bottom: 110px; }
-      p { margin-bottom: 5px; }
+      width: 95%;
+    }
+    .search-section {
+      label { margin-bottom: 5px; }
       input { padding: 12px 20px; }
     }
     .about { width: 93%; font-size: .96em; }
@@ -43,7 +49,7 @@
       .button { margin-bottom: 60px; }
     }
     .blog-section {
-      height: 350px;
+      height: 370px;
       .content { width: 45%; }
       .mosque { width: 55%; }
     }
@@ -53,9 +59,11 @@
 
 @media screen and (max-width: 851px) {
   .arinka {
-    .app-header .logo svg { width: 30px; margin-right: 7px; }
-    .navigation { left: 46%; margin-top: 10px; }
-    .cta-btn { margin-top: 6px; }
+    .app-header .logo {
+      svg { width: 28px; margin-right: 5px; }
+    }
+    .navigation { left: 48%; margin-top: 10px; }
+    .cta-btn { margin-top: 9px; padding: 6px 18px; }
     .cards-section .card {
       padding-top: 175px;
       margin-right: 5px;
@@ -74,7 +82,7 @@
 }
 
 // Restructure cards for smaller screen sizes
-@media screen and (min-width: 500px) and (max-width: 785px) {
+@media screen and (min-width: 440px) and (max-width: 785px) {
   @include cardsizing(
     $fontsize: 1.1em,
     $valign: -32.5px,
@@ -180,18 +188,11 @@
 @media screen and (max-width: 743px) {
   .arinka {
     .app-header { font-size: 1.15em; }
-    .product-overview {
-      width: 87%;
-      h1 { margin-bottom: 115px; }
-    }
   }
 }
 
 @media screen and (max-width: 720px) {
-  @include cardsizing($height: 260px, $factor: 90, $valign: -26px);
-  .arinka {
-    .product-overview { width: 85%; }
-  }
+  @include cardsizing($height: 260px, $factor: 90, $valign: -22.5px);
 }
 
 @media screen and (max-width: 700px) {

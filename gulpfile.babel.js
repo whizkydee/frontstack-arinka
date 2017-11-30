@@ -31,7 +31,7 @@ gulp.task('transpile', () => {
   return gulp.src(paths.script)
     .pipe(sourcemaps.init())
     .pipe(babel())
-      .on('error')
+      .on('error', err => console.log(err))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/js'))
 })

@@ -21,5 +21,19 @@
   input.addEventListener('blur', function () {
     input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed');
   });
+
+  if (window.innerWidth < 460) {
+    document.querySelector('.cta-btn').innerText = 'Account';
+  } else {
+    document.querySelector('.cta-btn').innerText = 'Login / Signup';
+  }
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth < 460) {
+      document.querySelector('.cta-btn').innerText = 'Account';
+    } else {
+      document.querySelector('.cta-btn').innerText = 'Login / Signup';
+    }
+  });
 })(window);
 //# sourceMappingURL=script.js.map

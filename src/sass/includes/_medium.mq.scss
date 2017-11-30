@@ -1,7 +1,7 @@
 @media screen and (max-width: 999px) {
   .arinka {
-    .product-overview h1 { font-size: 3.9em; }
-    .search-section { margin-top: 90px; }
+    .product-overview h1 { font-size: 3.5em; }
+    .search-section { margin-top: 110px; }
     .cards-section {
       .card { padding-top: 185px; height: 280px; }
       .button { margin: 70px auto; }
@@ -36,7 +36,7 @@
     .product-overview {
       margin-top: 120px;
       font-size: 1.13em;
-      width: 95%;
+      width: 80%;
     }
     .search-section {
       label { margin-bottom: 5px; }
@@ -77,6 +77,7 @@
   html { font-size: 14px; }
   .arinka {
     .product-overview { font-size: 1.145em; }
+    .search-section { margin-top: 120px; }
     .cards-section .card { width: 32.6%; }
   }
 }
@@ -118,7 +119,7 @@
       $colorlight: lighten($color, 7%);
       background-color: $color;
       display: inline-block;
-      margin: 0 50px 0 0px;
+      margin: 0 30px 0 0px;
       padding: 80px 50px;
       position: relative;
       cursor: pointer;
@@ -167,8 +168,9 @@
 }
 // Quick hack for 785px
 @media screen and (width: 785px) {
-  .arinka .product-overview {
-    font-size: 1.05em;
+  .arinka {
+    .product-overview { font-size: 1.05em; }
+    .search-section { margin-top: 120px; }
   }
   @include cardsizing($fontsize: .96em);
 }
@@ -178,6 +180,7 @@
   .arinka {
     main { font-size: .98em; margin-bottom: 100px; }
     .product-overview { margin-top: 130px; }
+    .search-section { margin-top: 115px; }
     .blog-section {
       height: 300px;
       .content { padding: 80px 50px; }
@@ -185,16 +188,17 @@
   }
 }
 
-@media screen and (max-width: 743px) {
+@media screen and (max-width: 737px) {
   .arinka {
-    .app-header { font-size: 1.15em; }
+    .product-overview { width: 91%; }
+    .search-section input { width: 73.813%; }
   }
 }
 
 @media screen and (max-width: 720px) {
-  @include cardsizing($height: 260px, $factor: 90, $valign: -22.5px);
+  @include cardsizing($height: 280px, $factor: 90, $valign: -22.5px);
 }
 
 @media screen and (max-width: 700px) {
-  @include cardsizing($fontsize: 1em);
+  @include cardsizing($fontsize: 1em, $valign: -28.5px);
 }

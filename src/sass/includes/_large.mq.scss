@@ -111,14 +111,13 @@
 
 @media screen and (max-width: 1200px) {
   .arinka .blog-section {
-    height: 470px;
     .content {
       padding: 110px 0px;
       margin-left: 40px;
-      width: 40%;
+      width: unset;
     }
     .mosque {
-      width: 58%;
+      width: 100%;
     }
   }
 }

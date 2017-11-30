@@ -21,4 +21,18 @@
   input.addEventListener('blur', () => {
     input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed')
   })
+
+  if (window.innerWidth < 460) {
+    document.querySelector('.cta-btn').innerText = 'Account';
+  } else {
+    document.querySelector('.cta-btn').innerText = 'Login / Signup';
+  }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 460) {
+      document.querySelector('.cta-btn').innerText = 'Account';
+    } else {
+      document.querySelector('.cta-btn').innerText = 'Login / Signup';
+    }
+  })
 })(window)

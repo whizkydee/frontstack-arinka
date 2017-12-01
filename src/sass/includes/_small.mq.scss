@@ -123,12 +123,13 @@
     .product-overview {
       margin-top: 115px;
     }
-  }
-  .navigation {
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-    @include scrollbar;
-    overflow-x: auto;
+    .search-section {
+      margin-top: 100px;
+    }
+    .blog-section {
+      font-size: .65em;
+      height: 390px;
+    }
   }
   #__scrrenSizeIndicator {
     right: unset !important;
@@ -137,8 +138,13 @@
 }
 
 @media screen and (max-width: 454px) {
-  .arinka .product-overview {
-    font-size: .9em;
+  .arinka {
+    .product-overview {
+      font-size: 1em;
+    }
+    .search-section {
+      margin-top: 110px;
+    }
   }
 }
 
@@ -154,6 +160,13 @@
   }
 }
 
+@media screen and (max-width: 440px) {
+  .arinka .blog-section {
+    font-size: .56em;
+    height: 360px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .arinka {
     main { height: 330px; }
@@ -163,11 +176,24 @@
     }
     .product-overview {
       margin-top: 85px;
-      font-size: .8em;
       width: 96%;
     }
     .search-section {
+      margin-top: 85px;
       input { padding-bottom: 8px; padding-top: 8px; }
     }
+  }
+}
+
+@media screen and (max-width: 406px) {
+  html { font-size: 12px; }
+}
+
+@media screen and (max-width: 390px) {
+  html { font-size: 11px; }
+  .arinka .cards-section .card {
+    padding-top: 190px;
+    height: 300px;
+    width: 83%;
   }
 }

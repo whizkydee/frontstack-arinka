@@ -6,7 +6,10 @@
       .card { padding-top: 185px; height: 280px; }
       .button { margin: 70px auto; }
     }
-    .blog-section { height: 400px; }
+    .blog-section {
+      font-size: .9em;
+      .content h1 { line-height: 1.1; }
+    }
     .app-header { padding: 30px; }
   }
 }
@@ -47,11 +50,6 @@
       width: 98%;
       .card { margin-right: 10px; }
       .button { margin-bottom: 60px; }
-    }
-    .blog-section {
-      height: 370px;
-      .content { width: 45%; }
-      .mosque { width: 55%; }
     }
     footer { font-size: .9em; }
   }
@@ -175,6 +173,10 @@
   @include cardsizing($fontsize: .96em);
 }
 
+@media screen and (min-width: 785px) {
+  .arinka .blog-section { font-size: 1.05em; }
+}
+
 @media screen and (max-width: 784px) {
   html { font-size: 13px; }
   .arinka {
@@ -182,8 +184,7 @@
     .product-overview { margin-top: 130px; }
     .search-section { margin-top: 115px; }
     .blog-section {
-      height: 300px;
-      .content { padding: 80px 50px; }
+      .content { font-size: 1.8em; }
     }
   }
 }

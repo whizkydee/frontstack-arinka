@@ -191,9 +191,12 @@
 
 @media screen and (max-width: 390px) {
   html { font-size: 11px; }
-  .arinka .cards-section .card {
-    padding-top: 190px;
-    height: 300px;
-    width: 83%;
+  .arinka {
+    .cards-section .card {
+      padding-top: 190px;
+      height: 300px;
+      width: 83%;
+    }
+    .product-overview h1 { font-size: 3em; }
   }
 }

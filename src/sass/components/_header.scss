@@ -26,7 +26,10 @@
 }
 
 @media screen and (min-width: 451px) {
-  .toggle-menu { display: none; }
+  .menu-trigger,
+  .menu-overlay {
+    display: none;
+  }
   @import 'navigation';
   
   .cta-btn {

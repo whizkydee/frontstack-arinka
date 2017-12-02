@@ -27,11 +27,14 @@
   var closebtn = document.querySelector('.close-btn');
 
   menubtn.addEventListener('click', function () {
-    overlay.classList.add('open');
+    if (!overlay.classList.contains('open')) {
+      overlay.classList.add('open');
+    }
   });
-
   closebtn.addEventListener('click', function () {
-    overlay.classList.remove('open');
+    if (overlay.classList.contains('open')) {
+      overlay.classList.remove('open');
+    }
   });
 })(window);
 //# sourceMappingURL=script.js.map

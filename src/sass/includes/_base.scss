@@ -36,18 +36,20 @@ body {
 
 .arinka {
   position: relative;
-  h1 {
-    line-height: 1.1;
-  }
-  button {
-    -webkit-appearance: none;
-  }
-  a {
-    text-decoration: none;
-    color: $white;
-  }
-  a,
-  button {
-    @include transition(all .3s ease-in-out);
-  }
 }
+
+h1 {
+  line-height: 1.1;
+}
+button {
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+a,
+button {
+  @include transition(all .3s ease-in-out);
+}
+

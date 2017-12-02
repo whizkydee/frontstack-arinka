@@ -196,6 +196,7 @@
     text-align: center;
     font-size: 1.8em;
     position: fixed;
+    display: block;
     z-index: 9999;
     height: 100%;
     width: 100%;
@@ -242,6 +243,14 @@
       padding: 30px;
       float: right;
       border: 0;
+      svg {
+        vertical-align: text-bottom;
+        display: inline-block;
+        margin-right: -3px;
+        fill: $white;
+        height: 28px;
+        width: 18px;
+      }
     }
     .inner {
       @include transform(translate(-50%, -50%));

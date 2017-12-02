@@ -5,12 +5,10 @@ footer {
   position: relative;
   font-size: .78em;
   display: block;
-  * {
+  a {
     font-weight: 500;
     display: block;
     color: #A9A9A9;
-  }
-  a {
     &:nth-child(odd) {
       float: left;
     }

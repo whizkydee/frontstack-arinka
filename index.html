@@ -144,6 +144,8 @@
     </div>
   </section>
   
-  <script src="dist/js/script.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    var links=document.querySelectorAll('a[href="#0"]');links.forEach(function(link){link.addEventListener('click',function(event){event.preventDefault();});});var input=document.querySelector('input');input.addEventListener('focus',function(){input.setAttribute('placeholder','');});input.addEventListener('blur',function(){input.setAttribute('placeholder','e.g educational, outdoors, relaxed');});var menubtn=document.querySelector('.menu-trigger');var overlay=document.querySelector('.menu-overlay');var closebtn=document.querySelector('.close-btn');menubtn.addEventListener('click',function(){if(!overlay.classList.contains('open')){overlay.classList.add('open');}});closebtn.addEventListener('click',function(){if(overlay.classList.contains('open')){overlay.classList.remove('open');}});
+  </script>
 </body>
 </html>

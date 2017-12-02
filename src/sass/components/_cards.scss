@@ -21,6 +21,7 @@
   .see-more { display: none; }
   .button {
     $color: #E7816B;
+    background-color: transparent;
     @include border-radius(2em);
     border: 2px solid $color;
     text-transform: uppercase;

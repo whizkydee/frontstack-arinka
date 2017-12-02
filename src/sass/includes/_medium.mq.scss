@@ -61,7 +61,7 @@
       svg { width: 28px; margin-right: 5px; }
     }
     .navigation { left: 48%; margin-top: 10px; }
-    .cta-btn { margin-top: 9px; padding: 6px 18px; }
+    .cta-btn { margin-top: 9px; padding: 4px 18px; }
     .cards-section .card {
       padding-top: 175px;
       margin-right: 5px;
@@ -197,7 +197,7 @@
 }
 
 @media screen and (max-width: 720px) {
-  @include cardsizing($height: 280px, $factor: 90, $valign: -22.5px);
+  @include cardsizing($height: 290px, $factor: 100, $valign: -31.5px);
 }
 
 @media screen and (max-width: 700px) {

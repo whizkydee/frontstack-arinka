@@ -39,8 +39,11 @@ body {
   h1 {
     line-height: 1.1;
   }
-  a {
+  a,
+  button {
     @include transition(all .3s ease-in-out);
+  }
+  a {
     text-decoration: none;
   }
 }

@@ -87,13 +87,12 @@
       left: 46%;
       li { padding: 3px 10px; }
     }
-    .cta-btn { padding: 4px 12px; margin-top: 11px; }
+    .cta-btn { padding: 2px 12px; margin-top: 11px; }
     .product-overview {
       width: 97%;
     }
   }
 }
-
 
 @media screen and (max-width: 500px) {
   @include cardsizing($width: 50%);
@@ -116,7 +115,7 @@
 
 @media screen and (max-width: 460px) {
   .arinka {
-    main { font-size: .9em; }
+    main { font-size: .9em; height: 370px; }
     .app-header {
       padding: 20px;
     }
@@ -124,7 +123,7 @@
       margin-top: 115px;
     }
     .search-section {
-      margin-top: 100px;
+      margin-top: 80px;
     }
     .blog-section {
       font-size: .65em;
@@ -143,7 +142,7 @@
       font-size: 1em;
     }
     .search-section {
-      margin-top: 110px;
+      margin-top: 90px;
     }
   }
 }
@@ -187,6 +186,10 @@
 
 @media screen and (max-width: 406px) {
   html { font-size: 12px; }
+  .arinka {
+    .product-overview { margin-top: 100px; }
+    .search-section { margin-top: 75px; }
+  }
 }
 
 @media screen and (max-width: 390px) {

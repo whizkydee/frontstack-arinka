@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 568px) {
   .arinka .product-overview h1 {
-    font-size: 3.2em;
+    font-size: 3.15em;
   }
 }
 
@@ -163,7 +163,7 @@
     background-color: transparent;
     text-transform: uppercase;
     position: relative;
-    margin-top: 12px;
+    margin-top: 13px;
     font-weight: 500;
     cursor: pointer;
     float: right;
@@ -193,7 +193,7 @@
   }
   .menu-overlay {
     @include transition(all .2s ease);
-    @include opacity(.3);
+    @include opacity(.5);
     background-color: #273340;
     background-color: rgba(39, 51, 64, .998);
     visibility: hidden;

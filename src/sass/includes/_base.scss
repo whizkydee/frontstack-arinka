@@ -39,11 +39,15 @@ body {
   h1 {
     line-height: 1.1;
   }
-  a,
   button {
-    @include transition(all .3s ease-in-out);
+    -webkit-appearance: none;
   }
   a {
     text-decoration: none;
+    color: $white;
+  }
+  a,
+  button {
+    @include transition(all .3s ease-in-out);
   }
 }

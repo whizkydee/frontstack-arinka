@@ -1,9 +1,9 @@
 // Header
 .app-header {
   text-transform: uppercase;
+  position: relative;
   padding: 30px 40px;
   font-size: 1em;
-  position: relative;
   .logo {
     float: left;
     margin: 0;
@@ -25,22 +25,24 @@
   }
 }
 
-/* Navigation */
-@import 'navigation';
-
-.cta-btn {
-  @include border-radius(10em);
-  text-transform: uppercase;
-  border: 2px solid #ED8079;
-  background-color: #ED8079;
-  letter-spacing: .05em;
-  padding: 6px 28px;
-  color: $off_white;
-  font-weight: 500;
-  font-size: .67em;
-  margin-top: 7px;
-  float: right;
-  &:hover {
-    background-color: transparent;
+@media screen and (min-width: 451px) {
+  .toggle-menu { display: none; }
+  @import 'navigation';
+  
+  .cta-btn {
+    @include border-radius(10em);
+    text-transform: uppercase;
+    border: 2px solid #ED8079;
+    background-color: #ED8079;
+    letter-spacing: .05em;
+    padding: 6px 28px;
+    color: $off_white;
+    font-weight: 500;
+    font-size: .67em;
+    margin-top: 7px;
+    float: right;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }

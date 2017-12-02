@@ -21,5 +21,17 @@
   input.addEventListener('blur', function () {
     input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed');
   });
+
+  var menubtn = document.querySelector('.menu-trigger');
+  var overlay = document.querySelector('.menu-overlay');
+  var closebtn = document.querySelector('.close-btn');
+
+  menubtn.addEventListener('click', function () {
+    overlay.classList.add('open');
+  });
+
+  closebtn.addEventListener('click', function () {
+    overlay.classList.remove('open');
+  });
 })(window);
 //# sourceMappingURL=script.js.map

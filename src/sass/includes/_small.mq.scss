@@ -147,6 +147,118 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .arinka {
+    .navigation,
+    .cta-btn {
+      display: none;
+    }
+    .app-header .logo { font-size: 1em; }
+  }
+  .menu-trigger {
+    background-color: transparent;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+    border: 0;
+  }
+  .burger {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    height: 11px;
+    width: 15px;
+    .bar {
+      @include border-radius(2px);
+      background: $white;
+      position: absolute;
+      cursor: pointer;
+      display: block;
+      height: 1.5px;
+      width: $full;
+      &:nth-child(2) {
+        top: 5px;
+      }
+      &:nth-child(3) {
+        top: 10px;
+      }
+    }
+  }
+  .menu-overlay {
+    @include transition(all .2s ease);
+    @include opacity(.3);
+    background-color: #273340;
+    background-color: rgba(39, 51, 64, .998);
+    visibility: hidden;
+    text-align: center;
+    font-size: 1.8em;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    &.open {
+      @include opacity(1);
+      visibility: visible;
+    }
+    *:not(div) {
+      text-transform: uppercase;
+      display: block;
+    }
+    li {
+      padding: 5px 0;
+      a {
+        letter-spacing: .03em;
+      }
+    }
+    button:not(.close-btn) {
+      $color: #3B4A5A;
+      @include transition(all .3s ease-in-out);
+      border-color: transparent;
+      letter-spacing: .05rem;
+      padding: 7px 20px 5px;
+      border-style: solid;
+      margin: 20px auto 0;
+      background: $white;
+      border-width: 2px;
+      font-size: .6em;
+      color: $color;
+      &:hover {
+        background-color: transparent;
+        border-color: $color;
+        color: $white;
+      }
+    }
+    .close-btn {
+      background-color: transparent;
+      font-size: .6em;
+      color: $white;
+      padding: 30px;
+      float: right;
+      border: 0;
+    }
+    .inner {
+      @include transform(translate(-50%, -50%));
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .arinka .blog-section {
+    font-size: .56em;
+    height: 360px;
+  }
+}
+
 @media screen and (max-width: 439px) {
   .arinka .cards-section {
     font-size: 1.3em;
@@ -156,13 +268,6 @@
       height: 350px;
       width: 83%;
     }
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .arinka .blog-section {
-    font-size: .56em;
-    height: 360px;
   }
 }
 

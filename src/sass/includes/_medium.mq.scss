@@ -201,5 +201,5 @@
 }
 
 @media screen and (max-width: 700px) {
-  @include cardsizing($fontsize: 1em, $valign: -28.5px);
+  @include cardsizing($fontsize: 1em, $valign: -38px);
 }

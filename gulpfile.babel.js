@@ -41,13 +41,9 @@ gulp.task( 'reload', () => gulp.src(paths.index).pipe(connect.reload()) )
 
 // handle changes and reload server afterwards.
 gulp.task('watch', () => {
-  gulp.watch(paths.script, ['transpile'])
-  gulp.watch(paths.sass, ['sass'])
-  // watch all paths and then reload.
-  gulp.watch(
-    [paths.index, paths.script, paths.sass],
-    ['reload']
-  )
+  gulp.watch(paths.script, ['transpile', 'reload'])
+  gulp.watch(paths.sass, ['sass', 'reload'])
+  gulp.watch(paths.index, ['reload'])
 })
 
 gulp.task('default', allTasks)

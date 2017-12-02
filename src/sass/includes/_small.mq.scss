@@ -53,6 +53,10 @@
     .cards-section { width: 100%; }
     .about { width: 95%; font-size: .9em; }
     .blog-section { height: 460px; }
+    footer {
+      padding: 30px 20px 40px;
+      font-size: 1em;
+    }
   }
 }
 
@@ -98,7 +102,7 @@
   @include cardsizing($width: 50%);
   .arinka .blog-section {
     font-size: .7em;
-    height: 430px;
+    height: 410px;
   }
 }
 
@@ -244,7 +248,7 @@
       float: right;
       border: 0;
       svg {
-        vertical-align: text-bottom;
+        vertical-align: -9px;
         display: inline-block;
         margin-right: -3px;
         fill: $white;
@@ -264,7 +268,7 @@
 @media screen and (max-width: 440px) {
   .arinka .blog-section {
     font-size: .56em;
-    height: 360px;
+    height: 340px;
   }
 }
 
@@ -315,5 +319,34 @@
       width: 83%;
     }
     .product-overview h1 { font-size: 3em; }
+    .search-section {
+      margin-top: 80px;
+    }
   }
+}
+
+@media screen and (max-width: 380px) {
+  .arinka .blog-section {
+    height: 300px;
+    .content {
+      padding-bottom: 70px;
+      margin-left: 20px;
+      padding-top: 70px;
+      font-size: 1.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .arinka {
+    .product-overview {
+      width: 99%;
+      h1 { font-size: 2.85em; }
+    }
+    .search-section { margin-top: 85px; }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .arinka .product-overview h1 { font-size: 2.645em; }
 }

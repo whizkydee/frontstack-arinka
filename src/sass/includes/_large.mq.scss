@@ -1,3 +1,16 @@
+@media screen and (min-width: 1201px) and (max-width: 1360px) {
+  .arinka .blog-section {
+    .content {
+      font-size: .878em;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .mosque {
+      width: 60%;
+    }
+  }
+}
+
 @media screen and (min-width: 900px) and (max-width: 1030px) {
   .arinka {
     .product-overview { width: 78.193%; }

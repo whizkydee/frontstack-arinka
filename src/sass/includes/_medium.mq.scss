@@ -86,7 +86,7 @@
   @include cardsizing($fontsize: .96em);
 }
 
-@media (min-width: 785px) {
+@media (min-width: 785px) and (max-width: 1360px) {
   .blog-section { font-size: 1.05em; }
 }
 

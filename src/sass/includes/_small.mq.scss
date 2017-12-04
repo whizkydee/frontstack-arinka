@@ -1,85 +1,77 @@
 @media (max-width: 650px) {
-  .arinka .product-overview h1 { font-size: 3.3em; }
+  .product-overview h1 { font-size: 3.3em; }
   .search-section { margin-top: 120px; }
 }
 
 @media (max-width: 634px) {
-  .arinka {
-    main { height: 400px; font-size: .95em; }
-    .product-overview {
-      margin-top: 85px;
-      width: 92%;
-    }
-    .search-section {
-      margin-top: 95px;
-    }
+  main { height: 400px; font-size: .95em; }
+  .product-overview {
+    margin-top: 85px;
+    width: 92%;
+  }
+  .search-section {
+    margin-top: 95px;
   }
 }
 
 @media (max-width: 620px) {
   @include cardsizing(
-  $height: 270px,
-  $width: 46%,
-  $factor: 90
+    $height: 270px,
+    $width: 46%,
+    $factor: 90
   );
 }
 
 @media (max-width: 599px) {
   html { font-size: 12.5px; }
-  .arinka {
-    main { height: 360px; }
-    .app-header {
-      padding: 20px 15px;
-      font-size: 1.18em;
-      .logo svg {
-        vertical-align: -16px;
-        margin-right: 4px;
-        height: 43px;
-        width: 22px;
-      }
+  main { height: 360px; }
+  .app-header {
+    padding: 20px 15px;
+    font-size: 1.18em;
+    .logo svg {
+      vertical-align: -16px;
+      margin-right: 4px;
+      height: 43px;
+      width: 22px;
     }
-    .cta-btn {
-      padding: 5px 15px;
-      margin-top: 9px;
-      font-size: .7em;
-    }
-    .product-overview {
-      font-size: 1.13em;
-      margin-top: 95px;
-    }
-    .search-section {
-      margin-top: 70px;
-      input { padding: 10px 20px; }
-    }
-    .cards-section { width: 100%; }
-    .about {
-      font-size: .9em;
-      width: 95%;
-    }
-    .blog-section { height: 460px; }
-    footer {
-      padding: 30px 20px 40px;
-      font-size: 1em;
-    }
+  }
+  .cta-btn {
+    padding: 5px 15px;
+    margin-top: 9px;
+    font-size: .7em;
+  }
+  .product-overview {
+    font-size: 1.13em;
+    margin-top: 95px;
+  }
+  .search-section {
+    margin-top: 70px;
+    input { padding: 10px 20px; }
+  }
+  .cards-section { width: 100%; }
+  .about {
+    font-size: .9em;
+    width: 95%;
+  }
+  .blog-section { height: 460px; }
+  footer {
+    padding: 30px 20px 40px;
+    font-size: 1em;
   }
 }
 
 @media (max-width: 568px) {
-  .arinka {
-    .product-overview h1 {
-      font-size: 3.15em;
-    }
-    .search-section {
-      margin-top: 75px;
-    }
+  .product-overview h1 {
+    font-size: 3.15em;
+  }
+  .search-section {
+    margin-top: 75px;
   }
 }
 
 @media (max-width: 550px) {
-  .arinka {
-    .product-overview { width: 98%; }
-    .about { font-size: .85em; }
-  }
+  .product-overview { width: 98%; }
+  .about { font-size: .85em; }
 }
 
 @media (max-width: 539px) {
@@ -87,44 +79,36 @@
 }
 
 @media (max-width: 518px) {
-  .arinka {
-    .product-overview h1 { font-size: 2.9em; }
-    .search-section { margin-top: 80px; }
-  }
+  .product-overview h1 { font-size: 2.9em; }
+  .search-section { margin-top: 80px; }
 }
 
 @media (max-width: 504px) {
-  .arinka {
-    .navigation {
-      margin-top: 11px;
-      left: 46%;
-      li { padding: 3px 10px; }
-    }
-    .cta-btn { padding: 2px 12px; margin-top: 11px; }
-    .product-overview {
-      width: 97%;
-    }
+  .navigation {
+    margin-top: 11px;
+    left: 46%;
+    li { padding: 3px 10px; }
+  }
+  .cta-btn { padding: 2px 12px; margin-top: 11px; }
+  .product-overview {
+    width: 97%;
   }
 }
 
 @media (max-width: 500px) {
   @include cardsizing($width: 50%);
-  .arinka {
-    main { height: 340px; }
-    .product-overview { margin-top: 85px; }
-    .search-section { margin-top: 75px; }
-    .blog-section {
-      font-size: .7em;
-      height: 410px;
-    }
+  main { height: 340px; }
+  .product-overview { margin-top: 85px; }
+  .search-section { margin-top: 75px; }
+  .blog-section {
+    font-size: .7em;
+    height: 410px;
   }
 }
 
 @media (max-width: 480px) {
-  .arinka {
-    main { font-size: .9em; }
-    .product-overview { margin-top: 90px; }
-  }
+  main { font-size: .9em; }
+  .product-overview { margin-top: 90px; }
 }
 
 @media (max-width: 479px) {
@@ -132,15 +116,13 @@
 }
 
 @media (max-width: 460px) {
-  .arinka {
-    main { font-size: .9em; }
-    .app-header { padding: 20px; }
-    .product-overview { margin-top: 95px; }
-    .search-section { margin-top: 70px; }
-    .blog-section {
-      font-size: .65em;
-      height: 390px;
-    }
+  main { font-size: .9em; }
+  .app-header { padding: 20px; }
+  .product-overview { margin-top: 95px; }
+  .search-section { margin-top: 70px; }
+  .blog-section {
+    font-size: .65em;
+    height: 390px;
   }
   #ScreenSizeIndicator {
     right: unset !important;
@@ -149,38 +131,34 @@
 }
 
 @media (max-width: 454px) {
-  .arinka {
-    main { height: 310px; }
-    .product-overview {
-      margin-top: 85px;
-      font-size: 1em;
-    }
-    .search-section {
-      margin-top: 65px;
-    }
+  main { height: 310px; }
+  .product-overview {
+    margin-top: 85px;
+    font-size: 1em;
+  }
+  .search-section {
+    margin-top: 65px;
   }
 }
 
 @media (max-width: 450px) {
-  .arinka {
-    .navigation,
-    .cta-btn {
-      display: none;
-    }
-    .app-header .logo { font-size: 1em; }
+  .navigation,
+  .cta-btn {
+    display: none;
   }
+  .app-header .logo { font-size: 1em; }
   @import 'components/mobile-nav';
 }
 
 @media (max-width: 440px) {
-  .arinka .blog-section {
+  .blog-section {
     font-size: .56em;
     height: 340px;
   }
 }
 
 @media (max-width: 439px) {
-  .arinka .cards-section {
+  .cards-section {
     font-size: 1.3em;
     .card {
       margin: 0 auto 10px auto;
@@ -192,42 +170,36 @@
 }
 
 @media (max-width: 430px) {
-  .arinka {
-    .app-header {
-      padding-right: 13px;
-      padding-left: 13px;
-    }
-    .product-overview { width: 96%; }
-    .search-section input { padding-bottom: 8px; padding-top: 8px; }
+  .app-header {
+    padding-right: 13px;
+    padding-left: 13px;
   }
+  .product-overview { width: 96%; }
+  .search-section input { padding-bottom: 8px; padding-top: 8px; }
 }
 
 @media (max-width: 406px) {
   html { font-size: 12px; }
-  .arinka {
-    main { height: 290px}
-    .product-overview { margin-top: 75px; }
-  }
+  main { height: 290px}
+  .product-overview { margin-top: 75px; }
 }
 
 @media (max-width: 390px) {
   html { font-size: 11px; }
-  .arinka {
-    .cards-section .card {
-      padding-top: 190px;
-      height: 300px;
-      width: 83%;
-    }
-    .product-overview h1 { font-size: 3em; }
-    .burger {
-      @include transform( scale(.9) );
-      vertical-align: -1px;
-    }
+  .cards-section .card {
+    padding-top: 190px;
+    height: 300px;
+    width: 83%;
+  }
+  .product-overview h1 { font-size: 3em; }
+  .burger {
+    @include transform( scale(.9) );
+    vertical-align: -1px;
   }
 }
 
 @media (max-width: 380px) {
-  .arinka .blog-section {
+  .blog-section {
     height: 300px;
     .content {
       padding-bottom: 70px;
@@ -239,31 +211,25 @@
 }
 
 @media (max-width: 371px) {
-  .arinka {
-    main { height: 270px; margin-bottom: 90px; }
-    .product-overview {
-      margin-top: 70px;
-      width: 99%;
-      h1 { font-size: 2.85em; }
-    }
-    .search-section { margin-top: 55px; }
+  main { height: 270px; margin-bottom: 90px; }
+  .product-overview {
+    margin-top: 70px;
+    width: 99%;
+    h1 { font-size: 2.85em; }
   }
+  .search-section { margin-top: 55px; }
 }
 
 @media (max-width: 343px) {
-  .arinka {
-    .product-overview h1 { font-size: 2.645em; }
-    .search-section { margin-top: 60px; }
-  }
+  .product-overview h1 { font-size: 2.645em; }
+  .search-section { margin-top: 60px; }
 }
 
 // Don't know why I'm doing this btw.
 // Below 320px? Dude, wtf!??
 @media (max-width: 319px) {
-  .arinka {
-    main { height: 250px; }
-    .product-overview { font-size: .93em; }
-    .search-section { margin-top: 45px; }
-  }
+  main { height: 250px; }
+  .product-overview { font-size: .93em; }
+  .search-section { margin-top: 45px; }
 }
 // Well, I'll just have to end it here :)

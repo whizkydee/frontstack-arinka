@@ -1,126 +1,108 @@
 @media (max-width: 999px) {
-  .arinka {
-    .product-overview h1 { font-size: 3.5em; }
-    .search-section { margin-top: 110px; }
-    .cards-section {
-      .card { padding-top: 180px; height: 280px; }
-      .button { margin: 50px auto 30px; }
-    }
-    .blog-section {
-      font-size: .9em;
-      .content h1 { line-height: 1.1; }
-    }
-    .app-header { padding: 30px; }
+  .product-overview h1 { font-size: 3.5em; }
+  .search-section { margin-top: 110px; }
+  .cards-section {
+    .card { padding-top: 180px; height: 280px; }
+    .button { margin: 50px auto 30px; }
   }
+  .blog-section {
+    font-size: .9em;
+    .content h1 { line-height: 1.1; }
+  }
+  .app-header { padding: 30px; }
 }
 
 @media (min-width: 900px) and (max-width: 999px) {
   html { font-size: 16px; }
-  .arinka {
-    .app-header { font-size: 1.089em; }
-    .product-overview {
-      margin-top: 125px;
-    }
-    .search-section {
-      label { margin-bottom: 6px; }
-      input { padding: 14px 20px; }
-    }
-    .cards-section { width: 92.5%; }
+  .app-header { font-size: 1.089em; }
+  .product-overview {
+    margin-top: 125px;
   }
+  .search-section {
+    label { margin-bottom: 6px; }
+    input { padding: 14px 20px; }
+  }
+  .cards-section { width: 92.5%; }
 }
 
 @media (max-width: 899px) {
   html { font-size: 15px; }
-  .arinka {
-    .app-header { font-size: 1.2em; }
-    @media (min-width: 461px) {
-      .navigation li a { letter-spacing: .05em; }
-    }
-    .product-overview {
-      margin-top: 120px;
-      font-size: 1.13em;
-      width: 80%;
-    }
-    .search-section {
-      label { margin-bottom: 5px; }
-      input { padding: 12px 20px; }
-    }
-    .about { width: 93%; font-size: .96em; }
-    .cards-section {
-      width: 98%;
-      .card { margin-right: 10px; }
-    }
-    footer { font-size: .9em; }
+  .app-header { font-size: 1.2em; }
+  @media (min-width: 461px) {
+    .navigation li a { letter-spacing: .05em; }
   }
+  .product-overview {
+    margin-top: 120px;
+    font-size: 1.13em;
+    width: 80%;
+  }
+  .search-section {
+    label { margin-bottom: 5px; }
+    input { padding: 12px 20px; }
+  }
+  .about { width: 93%; font-size: .96em; }
+  .cards-section {
+    width: 98%;
+    .card { margin-right: 10px; }
+  }
+  footer { font-size: .9em; }
 }
 
 @media (max-width: 851px) {
-  .arinka {
-    .app-header .logo {
-      svg { width: 28px; margin-right: 5px; }
-    }
-    .navigation { left: 48%; margin-top: 10px; }
-    .cta-btn { margin-top: 9px; padding: 4px 18px; }
-    .cards-section .card {
-      padding-top: 170px;
-      margin-right: 5px;
-      height: 270px;
-      width: 32%;
-    }
+  .app-header .logo {
+    svg { width: 28px; margin-right: 5px; }
+  }
+  .navigation { left: 48%; margin-top: 10px; }
+  .cta-btn { margin-top: 9px; padding: 4px 18px; }
+  .cards-section .card {
+    padding-top: 170px;
+    margin-right: 5px;
+    height: 270px;
+    width: 32%;
   }
 }
 
 @media (min-width: 786px) and (max-width: 830px) {
   html { font-size: 14px; }
-  .arinka {
-    .product-overview { font-size: 1.145em; }
-    .search-section { margin-top: 120px; }
-    .cards-section .card { width: 32.6%; }
-  }
+  .product-overview { font-size: 1.145em; }
+  .search-section { margin-top: 120px; }
+  .cards-section .card { width: 32.6%; }
 }
 
 // Restructure cards for smaller screen sizes
 @media (min-width: 440px) and (max-width: 785px) {
   @include cardsizing(
-  $fontsize: 1.1em,
-  $height: 300px,
-  $factor: 100,
-  $width: 39%
+    $fontsize: 1.1em,
+    $height: 300px,
+    $factor: 100,
+    $width: 39%
   );
-  .arinka {
-    @import 'components/scrollable-cards';
-  }
+  @import 'components/scrollable-cards';
 }
 // Quick hack for 785px
 @media (width: 785px) {
-  .arinka {
-    .product-overview { font-size: 1.05em; }
-    .search-section { margin-top: 120px; }
-  }
+  .product-overview { font-size: 1.05em; }
+  .search-section { margin-top: 120px; }
   @include cardsizing($fontsize: .96em);
 }
 
 @media (min-width: 785px) {
-  .arinka .blog-section { font-size: 1.05em; }
+  .blog-section { font-size: 1.05em; }
 }
 
 @media (max-width: 784px) {
   html { font-size: 13px; }
-  .arinka {
-    main { font-size: .98em; margin-bottom: 100px; }
-    .product-overview { margin-top: 130px; }
-    .search-section { margin-top: 115px; }
-    .blog-section {
-      .content { font-size: 1.8em; }
-    }
+  main { font-size: .98em; margin-bottom: 100px; }
+  .product-overview { margin-top: 130px; }
+  .search-section { margin-top: 115px; }
+  .blog-section {
+    .content { font-size: 1.8em; }
   }
 }
 
 @media (max-width: 737px) {
-  .arinka {
-    .product-overview { width: 91%; }
-    .search-section input { width: 73.813%; }
-  }
+  .product-overview { width: 91%; }
+  .search-section input { width: 73.813%; }
 }
 
 @media (max-width: 720px) {

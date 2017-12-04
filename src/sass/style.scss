@@ -5,8 +5,7 @@
   './includes/variables',
   './includes/mixins',
   './includes/fonts',
-  './includes/base',
-  './includes/media-queries';
+  './includes/base';
 
 /* ==========================================================================
   Main Styles
@@ -26,3 +25,6 @@
 
 /* Footer */
 @import './components/footer';
+
+/* Media Queries */
+@import './includes/media-queries';

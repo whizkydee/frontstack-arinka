@@ -1,4 +1,4 @@
-@media screen and (max-width: 999px) {
+@media (max-width: 999px) {
   .arinka {
     .product-overview h1 { font-size: 3.5em; }
     .search-section { margin-top: 110px; }
@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 999px) {
+@media (min-width: 900px) and (max-width: 999px) {
   html { font-size: 16px; }
   .arinka {
     .app-header { font-size: 1.089em; }
@@ -29,11 +29,11 @@
   }
 }
 
-@media screen and (max-width: 899px) {
+@media (max-width: 899px) {
   html { font-size: 15px; }
   .arinka {
     .app-header { font-size: 1.2em; }
-    @media screen and (min-width: 461px) {
+    @media (min-width: 461px) {
       .navigation li a { letter-spacing: .05em; }
     }
     .product-overview {
@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (max-width: 851px) {
+@media (max-width: 851px) {
   .arinka {
     .app-header .logo {
       svg { width: 28px; margin-right: 5px; }
@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (min-width: 786px) and (max-width: 830px) {
+@media (min-width: 786px) and (max-width: 830px) {
   html { font-size: 14px; }
   .arinka {
     .product-overview { font-size: 1.145em; }
@@ -80,7 +80,7 @@
 }
 
 // Restructure cards for smaller screen sizes
-@media screen and (min-width: 440px) and (max-width: 785px) {
+@media (min-width: 440px) and (max-width: 785px) {
   @include cardsizing(
   $fontsize: 1.1em,
   $height: 300px,
@@ -92,7 +92,7 @@
   }
 }
 // Quick hack for 785px
-@media screen and (width: 785px) {
+@media (width: 785px) {
   .arinka {
     .product-overview { font-size: 1.05em; }
     .search-section { margin-top: 120px; }
@@ -100,11 +100,11 @@
   @include cardsizing($fontsize: .96em);
 }
 
-@media screen and (min-width: 785px) {
+@media (min-width: 785px) {
   .arinka .blog-section { font-size: 1.05em; }
 }
 
-@media screen and (max-width: 784px) {
+@media (max-width: 784px) {
   html { font-size: 13px; }
   .arinka {
     main { font-size: .98em; margin-bottom: 100px; }
@@ -116,17 +116,17 @@
   }
 }
 
-@media screen and (max-width: 737px) {
+@media (max-width: 737px) {
   .arinka {
     .product-overview { width: 91%; }
     .search-section input { width: 73.813%; }
   }
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
   @include cardsizing($height: 290px, $factor: 100);
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   @include cardsizing($fontsize: 1em);
 }

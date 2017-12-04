@@ -1,4 +1,4 @@
-@media screen and (min-width: 1201px) and (max-width: 1360px) {
+@media (min-width: 1201px) and (max-width: 1360px) {
   .arinka .blog-section {
     .content {
       font-size: .878em;
@@ -11,7 +11,7 @@
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1030px) {
+@media (min-width: 900px) and (max-width: 1030px) {
   .arinka {
     .product-overview { width: 78.193%; }
     .cards-section {
@@ -27,7 +27,7 @@
 }
 
 // Globals
-@media screen and (min-width: 700px) and (max-width: 1351px) {
+@media (min-width: 700px) and (max-width: 1351px) {
   .arinka {
     main { margin-bottom: 140px; font-size: .95em; }
     .product-overview {
@@ -49,16 +49,16 @@
   }
 }
 
-@media screen and (min-width: 1060px) and (max-width: 1087px) {
+@media (min-width: 1060px) and (max-width: 1087px) {
   .arinka .about { font-size: .87em; }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1019px) {
+@media (min-width: 900px) and (max-width: 1019px) {
   .arinka .cards-section { width: 90%; }
 }
 // End Globals
 
-@media screen and (min-width: 1000px) and (max-width: 1080px) {
+@media (min-width: 1000px) and (max-width: 1080px) {
   .arinka {
     main { font-size: .9em; }
     .product-overview {
@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (min-width: 1031px) and (max-width: 1137px) {
+@media (min-width: 1031px) and (max-width: 1137px) {
   .arinka {
     .product-overview { width: 67%; }
     .cards-section {
@@ -96,7 +96,7 @@
   }
 }
 
-@media screen and (min-width: 1138px) and (max-width: 1351px) {
+@media (min-width: 1138px) and (max-width: 1351px) {
   .arinka {
     .product-overview { width: 63%; }
     .about { width: 80%; }
@@ -111,18 +111,18 @@
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 1351px) {
+@media (min-width: 100px) and (max-width: 1351px) {
   .arinka .product-overview h1 { font-size: 3.5em }
 }
 
-@media screen and (min-width: 1199px) {
+@media (min-width: 1199px) {
   .blog-section {
     .content { width: 45%; }
     .mosque { width: 70%; }
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .arinka .blog-section {
     .content {
       padding: 110px 0px;
@@ -139,7 +139,7 @@
   }
 }
 
-@media screen and (min-width: 1138px) and (max-width: 1220px) {
+@media (min-width: 1138px) and (max-width: 1220px) {
   .arinka .cards-section {
     width: 93%;
   }

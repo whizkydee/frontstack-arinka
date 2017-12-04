@@ -1,9 +1,9 @@
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .arinka .product-overview h1 { font-size: 3.3em; }
   .search-section { margin-top: 120px; }
 }
 
-@media screen and (max-width: 634px) {
+@media (max-width: 634px) {
   .arinka {
     main { height: 400px; font-size: .95em; }
     .product-overview {
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media (max-width: 620px) {
   @include cardsizing(
   $height: 270px,
   $width: 46%,
@@ -24,7 +24,7 @@
   );
 }
 
-@media screen and (max-width: 599px) {
+@media (max-width: 599px) {
   html { font-size: 12.5px; }
   .arinka {
     main { height: 360px; }
@@ -64,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 568px) {
+@media (max-width: 568px) {
   .arinka {
     .product-overview h1 {
       font-size: 3.15em;
@@ -75,25 +75,25 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
   .arinka {
     .product-overview { width: 98%; }
     .about { font-size: .85em; }
   }
 }
 
-@media screen and (max-width: 539px) {
+@media (max-width: 539px) {
   @include cardsizing($width: 50%);
 }
 
-@media screen and (max-width: 518px) {
+@media (max-width: 518px) {
   .arinka {
     .product-overview h1 { font-size: 2.9em; }
     .search-section { margin-top: 80px; }
   }
 }
 
-@media screen and (max-width: 504px) {
+@media (max-width: 504px) {
   .arinka {
     .navigation {
       margin-top: 11px;
@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   @include cardsizing($width: 50%);
   .arinka {
     main { height: 340px; }
@@ -120,18 +120,18 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .arinka {
     main { font-size: .9em; }
     .product-overview { margin-top: 90px; }
   }
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   @include cardsizing($width: 56%);
 }
 
-@media screen and (max-width: 460px) {
+@media (max-width: 460px) {
   .arinka {
     main { font-size: .9em; }
     .app-header { padding: 20px; }
@@ -148,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 454px) {
+@media (max-width: 454px) {
   .arinka {
     main { height: 310px; }
     .product-overview {
@@ -161,7 +161,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .arinka {
     .navigation,
     .cta-btn {
@@ -172,14 +172,14 @@
   @import 'components/mobile-nav';
 }
 
-@media screen and (max-width: 440px) {
+@media (max-width: 440px) {
   .arinka .blog-section {
     font-size: .56em;
     height: 340px;
   }
 }
 
-@media screen and (max-width: 439px) {
+@media (max-width: 439px) {
   .arinka .cards-section {
     font-size: 1.3em;
     .card {
@@ -191,7 +191,7 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media (max-width: 430px) {
   .arinka {
     .app-header {
       padding-right: 13px;
@@ -202,7 +202,7 @@
   }
 }
 
-@media screen and (max-width: 406px) {
+@media (max-width: 406px) {
   html { font-size: 12px; }
   .arinka {
     main { height: 290px}
@@ -210,7 +210,7 @@
   }
 }
 
-@media screen and (max-width: 390px) {
+@media (max-width: 390px) {
   html { font-size: 11px; }
   .arinka {
     .cards-section .card {
@@ -226,7 +226,7 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media (max-width: 380px) {
   .arinka .blog-section {
     height: 300px;
     .content {
@@ -238,7 +238,7 @@
   }
 }
 
-@media screen and (max-width: 371px) {
+@media (max-width: 371px) {
   .arinka {
     main { height: 270px; margin-bottom: 90px; }
     .product-overview {
@@ -250,7 +250,7 @@
   }
 }
 
-@media screen and (max-width: 343px) {
+@media (max-width: 343px) {
   .arinka {
     .product-overview h1 { font-size: 2.645em; }
     .search-section { margin-top: 60px; }
@@ -259,7 +259,7 @@
 
 // Don't know why I'm doing this btw.
 // Below 320px? Dude, wtf!??
-@media screen and (max-width: 319px) {
+@media (max-width: 319px) {
   .arinka {
     main { height: 250px; }
     .product-overview { font-size: .93em; }

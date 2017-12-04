@@ -25,13 +25,13 @@
   }
 }
 
-@media screen and (min-width: 451px) {
+@media (min-width: 451px) {
   .menu-trigger,
   .menu-overlay {
     display: none;
   }
   @import 'navigation';
-  
+
   .cta-btn {
     @include border-radius(10em);
     text-transform: uppercase;

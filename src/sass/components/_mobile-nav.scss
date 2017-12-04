@@ -99,9 +99,12 @@
       width: 18px;
     }
   }
-  .inner {
+  ul {
     @include transform(translate(-50%, -50%));
     position: absolute;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
     left: 50%;
     top: 50%;
   }

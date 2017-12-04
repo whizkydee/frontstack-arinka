@@ -1,7 +1,7 @@
 .cards-section {
   -webkit-overflow-scrolling: touch;
-  margin: 100px auto 200px;
   white-space: nowrap;
+  margin: 100px auto;
   @include scrollbar;
   overflow-x: auto;
   .card:first-of-type {

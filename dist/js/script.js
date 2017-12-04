@@ -12,16 +12,6 @@
     });
   });
 
-  var input = document.querySelector('input');
-
-  input.addEventListener('focus', function () {
-    input.setAttribute('placeholder', '');
-  });
-
-  input.addEventListener('blur', function () {
-    input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed');
-  });
-
   var menubtn = document.querySelector('.menu-trigger');
   var overlay = document.querySelector('.menu-overlay');
   var closebtn = document.querySelector('.close-btn');

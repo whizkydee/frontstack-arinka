@@ -1,0 +1,110 @@
+.menu-trigger {
+  background-color: transparent;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  float: right;
+  border: 0;
+}
+.burger {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  height: 11px;
+  width: 15px;
+  .bar {
+    @include border-radius(2px);
+    background: $white;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    height: 1.5px;
+    width: $full;
+    &:nth-child(2) {
+      top: 5px;
+    }
+    &:nth-child(3) {
+      top: 10px;
+    }
+  }
+}
+.menu-overlay {
+  @include transition(all .1s ease);
+  @include opacity(.5);
+  background-color: #273340;
+  background-color: rgba(39, 51, 64, .99);
+  visibility: hidden;
+  text-align: center;
+  font-size: 1.8em;
+  position: fixed;
+  display: block;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  &.open {
+    @include opacity(1);
+    visibility: visible;
+    button:not(.close-btn) {
+      @include transition(all .3s ease-in-out);
+    }
+  }
+  *:not(div) {
+    text-transform: uppercase;
+    display: block;
+  }
+  button,
+  a {
+    @include transition(none 0s);
+  }
+  li {
+    padding: 5px 0;
+    a {
+      letter-spacing: .03em;
+    }
+  }
+  button:not(.close-btn) {
+    $color: #3B4A5A;
+    border-color: transparent;
+    letter-spacing: .05rem;
+    padding: 7px 20px 5px;
+    border-style: solid;
+    margin: 20px auto 0;
+    background: $white;
+    border-width: 2px;
+    font-size: .6em;
+    color: $color;
+    &:hover {
+      background-color: transparent;
+      border-color: $color;
+      color: $white;
+    }
+  }
+  .close-btn {
+    background-color: transparent;
+    font-size: .6em;
+    color: $white;
+    padding: 30px;
+    float: right;
+    border: 0;
+    svg {
+      vertical-align: -9px;
+      display: inline-block;
+      margin-right: -3px;
+      fill: $white;
+      height: 28px;
+      width: 18px;
+    }
+  }
+  .inner {
+    @include transform(translate(-50%, -50%));
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}

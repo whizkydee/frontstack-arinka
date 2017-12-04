@@ -11,16 +11,6 @@
       event.preventDefault()
     })
   })
-  
-  const input = document.querySelector('input')
-
-  input.addEventListener('focus', () => {
-    input.setAttribute('placeholder', '')
-  })
-  
-  input.addEventListener('blur', () => {
-    input.setAttribute('placeholder', 'e.g educational, outdoors, relaxed')
-  })
 
   const menubtn = document.querySelector('.menu-trigger')
   const overlay = document.querySelector('.menu-overlay')

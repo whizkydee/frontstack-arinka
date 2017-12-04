@@ -3,7 +3,7 @@
     .product-overview h1 { font-size: 3.5em; }
     .search-section { margin-top: 110px; }
     .cards-section {
-      .card { padding-top: 185px; height: 280px; }
+      .card { padding-top: 180px; height: 280px; }
       .button { margin: 50px auto 30px; }
     }
     .blog-section {
@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 899px) {
+@media screen and (max-width: 899px) {
   html { font-size: 15px; }
   .arinka {
     .app-header { font-size: 1.2em; }
@@ -62,11 +62,11 @@
     .navigation { left: 48%; margin-top: 10px; }
     .cta-btn { margin-top: 9px; padding: 4px 18px; }
     .cards-section .card {
-      padding-top: 175px;
+      padding-top: 170px;
       margin-right: 5px;
       height: 270px;
       width: 32%;
-    } 
+    }
   }
 }
 
@@ -82,85 +82,13 @@
 // Restructure cards for smaller screen sizes
 @media screen and (min-width: 440px) and (max-width: 785px) {
   @include cardsizing(
-    $fontsize: 1.1em,
-    $valign: -32.5px,
-    $height: 300px,
-    $factor: 100,
-    $width: 39%
+  $fontsize: 1.1em,
+  $height: 300px,
+  $factor: 100,
+  $width: 39%
   );
-  .arinka .cards-section {
-    -webkit-overflow-scrolling: touch;
-    margin: 100px auto 200px;
-    white-space: nowrap;
-    @include scrollbar;
-    overflow-x: auto;
-    .card:first-of-type {
-      margin-left: 8px;
-    }
-    &:before {
-      @include transform(translate(-50%));
-      content: attr(data-hint);
-      text-align: center;
-      position: absolute;
-      font-size: 1.13em;
-      margin-top: -35px;
-      font-weight: 400;
-      color: #999999;
-      left: 50%;
-    }
-    .button { display: none; }
-    .see-more {
-      @include transition(background-color .3s ease-in-out);
-      @include border-radius(5px);
-      $color: #BB4A31;
-      $colorlight: lighten($color, 7%);
-      background-color: $color;
-      display: inline-block;
-      margin: 0 30px 0 0px;
-      padding: 80px 50px;
-      position: relative;
-      cursor: pointer;
-      width: 37%;
-      &:hover,
-      &:active {
-        background-color: $colorlight;
-        .svg {
-          background-color: transparent;  
-          svg {
-            fill: $white;
-          }
-        }
-      }
-      h2 {
-        @include transform(translate(-50%, -50%));
-        text-transform: lowercase;
-        position: absolute;
-        font-size: 1.35em;
-        font-weight: 400;
-        color: $white;
-        padding: 0;
-        margin: 0;
-        left: 50%;
-        top: 50%;
-      }
-      .svg {
-        @include transition(background-color .2s ease);
-        @include border-radius($full);
-        background-color: $white;
-        margin: 0 auto 20px;
-        border: 3px solid;
-        display: block;
-        padding: 10px;
-        height: 60px;
-        width: 60px;
-        svg {
-          @include transition(fill .2s ease .1);
-          fill: $color;
-          height: 35px;
-          width: 35px;
-        }
-      }
-    }
+  .arinka {
+    @import 'components/scrollable-cards';
   }
 }
 // Quick hack for 785px
@@ -196,9 +124,9 @@
 }
 
 @media screen and (max-width: 720px) {
-  @include cardsizing($height: 290px, $factor: 100, $valign: -31.5px);
+  @include cardsizing($height: 290px, $factor: 100);
 }
 
 @media screen and (max-width: 700px) {
-  @include cardsizing($fontsize: 1em, $valign: -38px);
+  @include cardsizing($fontsize: 1em);
 }

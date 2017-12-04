@@ -8,7 +8,7 @@
     @include transition(background-color .3s linear);
     background-color: rgba(4, 4, 4, .5);
     @include border-radius(5px);
-    padding: 240px 30px 0px;
+    padding: 235px 40px 0;
     display: inline-block;
     position: relative;
     margin-right: 30px;
@@ -17,6 +17,10 @@
     font-size: 1em;
     height: 360px;
     width: 31.2%;
+    @media screen and (max-width: 950px) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
     &:last-of-type { margin-right: 0; margin-bottom: 0; }
     &:hover {
       background-color: rgba(4, 4, 4, .35);

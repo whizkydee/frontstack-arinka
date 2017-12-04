@@ -1,7 +1,7 @@
 {
   "name": "frontstack-arinka",
   "version": "1.0.0",
-  "description": "A super-responsive webpage for the FrontStack Hackathon",
+  "description": "A super-responsive webpage for the Frontstack Hackathon",
   "main": "src/script.js",
   "license": "MIT",
   "devDependencies": {

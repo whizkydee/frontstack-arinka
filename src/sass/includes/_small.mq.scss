@@ -12,21 +12,19 @@
     }
     .search-section {
       margin-top: 95px;
+    }
   }
-}
 }
 
 @media screen and (max-width: 620px) {
   @include cardsizing(
-    $valign: -28.5px,
-    $height: 270px,
-    $width: 46%,
-    $factor: 90
+  $height: 270px,
+  $width: 46%,
+  $factor: 90
   );
 }
 
 @media screen and (max-width: 599px) {
-  @include cardsizing($valign: -31.5px);
   html { font-size: 12.5px; }
   .arinka {
     main { height: 360px; }
@@ -54,7 +52,10 @@
       input { padding: 10px 20px; }
     }
     .cards-section { width: 100%; }
-    .about { width: 95%; font-size: .9em; }
+    .about {
+      font-size: .9em;
+      width: 95%;
+    }
     .blog-section { height: 460px; }
     footer {
       padding: 30px 20px 40px;
@@ -66,11 +67,11 @@
 @media screen and (max-width: 568px) {
   .arinka {
     .product-overview h1 {
-    font-size: 3.15em;
-  }
+      font-size: 3.15em;
+    }
     .search-section {
       margin-top: 75px;
-}
+    }
   }
 }
 
@@ -113,10 +114,10 @@
     .product-overview { margin-top: 85px; }
     .search-section { margin-top: 75px; }
     .blog-section {
-    font-size: .7em;
-    height: 410px;
+      font-size: .7em;
+      height: 410px;
+    }
   }
-}
 }
 
 @media screen and (max-width: 480px) {
@@ -141,7 +142,7 @@
       height: 390px;
     }
   }
-  #__scrrenSizeIndicator {
+  #ScreenSizeIndicator {
     right: unset !important;
     left: 10px;
   }
@@ -155,7 +156,7 @@
       font-size: 1em;
     }
     .search-section {
-      margin-top: 60px;
+      margin-top: 65px;
     }
   }
 }
@@ -169,7 +170,7 @@
     .app-header .logo { font-size: 1em; }
   }
   @import 'components/mobile-nav';
-    }
+}
 
 @media screen and (max-width: 440px) {
   .arinka .blog-section {
@@ -218,8 +219,9 @@
       width: 83%;
     }
     .product-overview h1 { font-size: 3em; }
-    .search-section {
-      margin-top: 65px;
+    .burger {
+      @include transform( scale(.9) );
+      vertical-align: -1px;
     }
   }
 }
@@ -249,5 +251,19 @@
 }
 
 @media screen and (max-width: 343px) {
-  .arinka .product-overview h1 { font-size: 2.645em; }
+  .arinka {
+    .product-overview h1 { font-size: 2.645em; }
+    .search-section { margin-top: 60px; }
+  }
 }
+
+// Don't know why I'm doing this btw.
+// Below 320px? Dude, wtf!??
+@media screen and (max-width: 319px) {
+  .arinka {
+    main { height: 250px; }
+    .product-overview { font-size: .93em; }
+    .search-section { margin-top: 45px; }
+  }
+}
+// Well, I'll just have to end it here :)

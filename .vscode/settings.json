@@ -1,6 +1,9 @@
 {
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "editor.insertSpaces": true,
   "prettier.bracketSpacing": true,
   "prettier.singleQuote": true,
   "prettier.semi": false,

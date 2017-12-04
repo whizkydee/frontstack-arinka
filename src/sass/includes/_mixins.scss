@@ -11,7 +11,7 @@
   @each $transition in $transitions {
     $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
   }
-  
+
   -webkit-transition: $unfoldedTransitions;
   -moz-transition: $unfoldedTransitions;
   -ms-transition: $unfoldedTransitions;
@@ -26,7 +26,7 @@
   $easing: null; // Browser default is ease, which is what we want
   $delay: null; // Browser default is 0, which is what we want
   $defaultProperties: ($property, $duration, $easing, $delay);
-  
+
   // Grab transition properties if they exist
   $unfoldedTransition: ();
   @for $i from 1 through length($defaultProperties) {
@@ -38,7 +38,7 @@
     }
     $unfoldedTransition: append($unfoldedTransition, $p);
   }
-  
+
   @return $unfoldedTransition;
 }
 
@@ -138,7 +138,6 @@
 
 @mixin cardsizing(
   $fontsize: null,
-  $valign: null,
   $height: null,
   $factor: null,
   $width: null
@@ -157,7 +156,6 @@
       @if ($width != null) { width: #{$width}; }
     }
     .see-more {
-      @if ($valign != null) { vertical-align: $valign; }
       @if ($width != null) { width: #{$btnwidth}; }
       @if ($height != null) { height: #{$height}; }
     }

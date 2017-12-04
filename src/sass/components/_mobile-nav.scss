@@ -2,11 +2,10 @@
   background-color: transparent;
   text-transform: uppercase;
   position: relative;
-  margin-top: 13px;
   font-weight: 500;
+  margin-top: 13px;
   cursor: pointer;
   float: right;
-  border: 0;
 }
 .burger {
   display: inline-block;
@@ -91,10 +90,9 @@
     color: $white;
     padding: 30px;
     float: right;
-    border: 0;
     svg {
-      vertical-align: -9px;
       display: inline-block;
+      vertical-align: -9px;
       margin-right: -3px;
       fill: $white;
       height: 28px;

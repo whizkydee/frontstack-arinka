@@ -44,7 +44,9 @@ main {
     color: #757575;
     width: 83.813%;
     &::placeholder { color: #C3C0C0; }
-    &::-moz-placeholder { color: #C3C0C0; }
+    // Some how, Firefox lightens the color of placeholders.
+    // We use a darker color then.
+    &::-moz-placeholder { color: #737070; }
     &::-webkit-input-placeholder { color: #C3C0C0; }
     &::-ms-input-placeholder { color: #C3C0C0; }
     &:-ms-input-placeholder { color: #C3C0C0; }
